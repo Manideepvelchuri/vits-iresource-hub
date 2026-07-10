@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Placement & Careers Prep Hub — VITS iResource Hub</title>
+  <meta name="description" content="Prepare for campus placements and off-campus tech jobs. Links to HackerRank, LeetCode, HackerEarth, InterviewBit, aptitude guides, resume tools, and ECE/CS mock sites.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+                  <a href="index.html" class="nav-logo">
+        <img src="images/navbar-logo.png" alt="VITS iResource Hub">
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="academics.html">📚 Academics</a></li>
+        <li><a href="software.html">💻 Software</a></li>
+        <li><a href="gate.html">🎯 GATE</a></li>
+        <li><a href="placements.html" class="active">🏢 Placements</a></li>
+        <li><a href="useful-links.html">🔗 Links</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀️</button>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> <span>Placements</span>
+      </div>
+      <div class="page-header-icon">🏢</div>
+      <h1>Placement & Placement Prep Portal</h1>
+      <p>Cracking career opportunities in Core Electronics, Systems Engineering, and Computer Science software roles.</p>
+    </div>
+  </header>
+
+  <!-- Placement Content Section -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Search Bar -->
+      <div class="search-bar reveal">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Search coding platforms, DSA resources, aptitude, or interview tips...">
+      </div>
+
+      <!-- Section 1: Coding Practice & Contests -->
+      <div class="subsection reveal" data-search-container>
+        <div class="subsection-header">
+          <div class="subsection-icon icon-code">💻</div>
+          <h2>Coding Practice Platforms</h2>
+        </div>
+        <p class="card-desc mb-6">Master coding, algorithm design, and syntax. Featured platforms for general programming and technical assessments:</p>
+        <div class="cards-grid">
+          <a href="https://www.hackerrank.com" target="_blank" rel="noopener noreferrer" class="resource-card" data-searchable="HackerRank coding practice tests assessments python c cpp java hackranker programming">
+            <div class="resource-icon">🎯</div>
+            <div class="resource-info">
+              <h4>HackerRank</h4>
+              <p>Top platform for coding practice, certifications, and structural language tracks.</p>
+            </div>
+            <div class="resource-arrow">→</div>
+          </a>
+          <a href="https://leetcode.com" target="_blank" rel="noopener noreferrer" class="resource-card" data-searchable="LeetCode technical interview coding database dsa algorithms interview questions">
+            <div class="resource-icon">🏆</div>
+            <div class="resource-info">
+              <h4>LeetCode</h4>
+              <p>The standard repository for data structures, algorithms, and company-tagged questions.</p>
+            </div>
+            <div class="resource-arrow">→</div>
+          </a>
+          <a href="https://www.hackerearth.com" target="_blank" rel="noopener noreferrer" class="resource-card" data-searchable="HackerEarth coding assessments hiring challenges hackathons competitive">
+            <div class="resource-icon">🌍</div>
+            <div class="resource-info">
+              <h4>HackerEarth</h4>
+              <p>Hackathons, developer coding assessments, and company-specific hiring challenges.</p>
+            </div>
+            <div class="resource-arrow">→</div>
+          </a>
+          <a href="https://www.geeksforgeeks.org" target="_blank" rel="noopener noreferrer" class="resource-card" data-searchable="GeeksforGeeks dsa coding sheets algorithms syntax explanations languages">
+            <div class="resource-icon">🗂️</div>
+            <div class="resource-info">
+              <h4>GeeksforGeeks Coding</h4>
+              <p>Topic-wise programming practices, algorithm explanations, and company interview archives.</p>
+            </div>
+            <div class="resource-arrow">→</div>
+          </a>
+          <a href="https://www.interviewbit.com" target="_blank" rel="noopener noreferrer" class="resource-card" data-searchable="InterviewBit structured roadmap dsa timer preparation system">
+            <div class="resource-icon">⚡</div>
+            <div class="resource-info">
+              <h4>InterviewBit</h4>
+              <p>Time-bounded practice sessions and structured roadmaps for tech interview preparation.</p>
+            </div>
+            <div class="resource-arrow">→</div>
+          </a>
+          <a href="https://www.codechef.com" target="_blank" rel="noopener noreferrer" class="resource-card" data-searchable="CodeChef competitive programming star rating contests debug challenges">
+            <div class="resource-icon">🌶️</div>
+            <div class="resource-info">
+              <h4>CodeChef</h4>
+              <p>Monthly coding contests, division-wise challenges, and programming star levels.</p>
+            </div>
+            <div class="resource-arrow">→</div>
+          </a>
+          <a href="https://codeforces.com" target="_blank" rel="noopener noreferrer" class="resource-card" data-searchable="Codeforces advanced competitive programming algorithms math contests division">
+            <div class="resource-icon">🌀</div>
+            <div class="resource-info">
+              <h4>Codeforces</h4>
+              <p>Advanced competitive programming platform hosting short, high-level algorithm contests.</p>
+            </div>
+            <div class="resource-arrow">→</div>
+          </a>
+          <a href="https://neetcode.io" target="_blank" rel="noopener noreferrer" class="resource-card" data-searchable="NeetCode leetcode roadmap database blind 75 list solutions tutorials">
+            <div class="resource-icon">🛹</div>
+            <div class="resource-info">
+              <h4>NeetCode</h4>
+              <p>Structured LeetCode roadmap, interactive lists (Blind 75), and video walkthroughs.</p>
+            </div>
+            <div class="resource-arrow">→</div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Section 2: DSA & Aptitude -->
+      <div class="subsection reveal">
+        <div class="subsection-header">
+          <div class="subsection-icon icon-book">📊</div>
+          <h2>DSA Sheets & Aptitude Portals</h2>
+        </div>
+        <p class="card-desc mb-6">Topic-wise aptitude preparation, numerical reasoning, and essential data structure guides:</p>
+        <div class="cards-grid">
+          <a href="https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/" target="_blank" rel="noopener noreferrer" class="resource-card" data-searchable="Strivers A2Z DSA Sheet takeuforward roadmap top coding list coding patterns">
+            <div class="resource-icon">📝</div>
+            <div class="resource-info">
+              <h4>Striver's A2Z DSA Sheet</h4>
+              <p>Comprehensive structured list of questions covering all major tech interview topics.</p>
+            </div>
+            <div class="resource-arrow">→</div>
+          </a>
+          <a href="https://www.indiabix.com" target="_blank" rel="noopener noreferrer" class="resource-card" data-searchable="IndiaBIX Aptitude logical verbal quantitative reasoning question banks">
+            <div class="resource-icon">🧠</div>
+            <div class="resource-info">
+              <h4>IndiaBIX Aptitude</h4>
+              <p>Large database of verbal, quantitative, and logical reasoning test papers with solutions.</p>
+            </div>
+            <div class="resource-arrow">→</div>
+          </a>
+          <a href="https://prepinsta.com" target="_blank" rel="noopener noreferrer" class="resource-card" data-searchable="PrepInsta company specific patterns placement sheets syllabus training">
+            <div class="resource-icon">🚀</div>
+            <div class="resource-info">
+              <h4>PrepInsta Placement</h4>
+              <p>Exams schedules, company-specific preparation guides, and top 100 codes list.</p>
+            </div>
+            <div class="resource-arrow">→</div>
+          </a>
+          <a href="https://www.careerride.com" target="_blank" rel="noopener noreferrer" class="resource-card" data-searchable="CareerRide mock tests questions answers HR tips resume review">
+            <div class="resource-icon">🚗</div>
+            <div class="resource-info">
+              <h4>CareerRide</h4>
+              <p>Verbal reasoning tests, quantitative aptitude questions, and technical interview logs.</p>
+            </div>
+            <div class="resource-arrow">→</div>
+          </a>
+          <a href="https://www.faceprep.in" target="_blank" rel="noopener noreferrer" class="resource-card" data-searchable="FacePrep programming bootcamp aptitude mock tests placements coding">
+            <div class="resource-icon">🧑‍🏫</div>
+            <div class="resource-info">
+              <h4>FacePrep</h4>
+              <p>Placements training, aptitude modules, coding test patterns, and study guides.</p>
+            </div>
+            <div class="resource-arrow">→</div>
+          </a>
+          <a href="https://talentbattle.in" target="_blank" rel="noopener noreferrer" class="resource-card" data-searchable="TalentBattle coding camps aptitude company profiles training test papers">
+            <div class="resource-icon">⚔️</div>
+            <div class="resource-info">
+              <h4>TalentBattle</h4>
+              <p>Full placement preparation portal, mock interview papers, and company-specific courses.</p>
+            </div>
+            <div class="resource-arrow">→</div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Section 3: Interview Prep & Resumes -->
+      <div class="subsection reveal">
+        <div class="subsection-header">
+          <div class="subsection-icon icon-placement">🎤</div>
+          <h2>Interview Prep, Reviews & Resumes</h2>
+        </div>
+        <p class="card-desc mb-6">ATS resume validators, peer-to-peer live mock interfaces, and real company feedback portals:</p>
+        <div class="cards-grid">
+          <a href="https://www.glassdoor.co.in" target="_blank" rel="noopener noreferrer" class="resource-card" data-searchable="Glassdoor company salaries reviews feedback questions experiences">
+            <div class="resource-icon">💼</div>
+            <div class="resource-info">
+              <h4>Glassdoor Interviews</h4>
+              <p>Verify salary stats, real company reviews, and interview feedback records.</p>
+            </div>
+            <div class="resource-arrow">→</div>
+          </a>
+          <a href="https://www.ambitionbox.com" target="_blank" rel="noopener noreferrer" class="resource-card" data-searchable="AmbitionBox company salary stats review logs ratings feedback placement prep">
+            <div class="resource-icon">📦</div>
+            <div class="resource-info">
+              <h4>AmbitionBox</h4>
+              <p>Indian company reviews, salary calculators, ratings, and placement preparation resources.</p>
+            </div>
+            <div class="resource-arrow">→</div>
+          </a>
+          <a href="https://www.pramp.com" target="_blank" rel="noopener noreferrer" class="resource-card" data-searchable="Pramp Mock peers live meetings coding design system data structure">
+            <div class="resource-icon">🗣️</div>
+            <div class="resource-info">
+              <h4>Pramp Peer Mocks</h4>
+              <p>Collaborative peer-to-peer coding and system design mock interviews for free.</p>
+            </div>
+            <div class="resource-arrow">→</div>
+          </a>
+          <a href="https://www.tealhq.com" target="_blank" rel="noopener noreferrer" class="resource-card" data-searchable="Teal Resume ATS friendly checker tracker analyzer layout templates">
+            <div class="resource-icon">📋</div>
+            <div class="resource-info">
+              <h4>Teal Resume Tools</h4>
+              <p>Verify resume layout, match descriptions with keywords, and check ATS compatibility.</p>
+            </div>
+            <div class="resource-arrow">→</div>
+          </a>
+          <a href="https://www.kickresume.com" target="_blank" rel="noopener noreferrer" class="resource-card" data-searchable="Kickresume AI resume writer templates builder layout cover letters">
+            <div class="resource-icon">📝</div>
+            <div class="resource-info">
+              <h4>Kickresume Builder</h4>
+              <p>Create resumes and cover letters using customizable AI content and templates.</p>
+            </div>
+            <div class="resource-arrow">→</div>
+          </a>
+          <a href="https://www.canva.com/create/resumes/" target="_blank" rel="noopener noreferrer" class="resource-card" data-searchable="Canva resume builder designer templates formatting layout">
+            <div class="resource-icon">🎨</div>
+            <div class="resource-info">
+              <h4>Canva Resumes</h4>
+              <p>Build visually striking resumes with premium designer templates and layout tools.</p>
+            </div>
+            <div class="resource-arrow">→</div>
+          </a>
+          <a href="https://resumod.co" target="_blank" rel="noopener noreferrer" class="resource-card" data-searchable="Resumod quick resume creator editor simple formats pre-written phrases">
+            <div class="resource-icon">💼</div>
+            <div class="resource-info">
+              <h4>Resumod Creator</h4>
+              <p>Build and format simple, clean resumes with pre-written professional phrases.</p>
+            </div>
+            <div class="resource-arrow">→</div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Section 4: Top Recruiter Directories -->
+      <div class="subsection reveal">
+        <div class="subsection-header">
+          <div class="subsection-icon icon-placement">🏢</div>
+          <h2>Top Recruiter Directories</h2>
+        </div>
+        <div class="cards-grid">
+          <div>
+            <h3 class="mb-4">⚙️ Core Electronics & Semiconductor</h3>
+            <table class="styled-table">
+              <thead>
+                <tr>
+                  <th>Company</th>
+                  <th>Core Focus Area</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Qualcomm</td>
+                  <td>Semiconductor, VLSI, wireless chipsets</td>
+                </tr>
+                <tr>
+                  <td>Intel</td>
+                  <td>Processor architecture, FPGA development</td>
+                </tr>
+                <tr>
+                  <td>NVIDIA</td>
+                  <td>GPU architectures, hardware accelerators, AI chips</td>
+                </tr>
+                <tr>
+                  <td>AMD</td>
+                  <td>Semiconductor design, microprocessors</td>
+                </tr>
+                <tr>
+                  <td>Samsung</td>
+                  <td>Display technologies, memory chips, consumer goods</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div>
+            <h3 class="mb-4">💻 Computer Science / IT / Software</h3>
+            <table class="styled-table">
+              <thead>
+                <tr>
+                  <th>Company</th>
+                  <th>Core Focus Area</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Amazon</td>
+                  <td>Product development, Cloud (AWS), backend</td>
+                </tr>
+                <tr>
+                  <td>Microsoft</td>
+                  <td>Product suites, operating systems, compiler tools</td>
+                </tr>
+                <tr>
+                  <td>Google</td>
+                  <td>Search tech, Android systems, TPU hardware design</td>
+                </tr>
+                <tr>
+                  <td>TCS / Infosys</td>
+                  <td>Mass recruiters (IT consulting, software services)</td>
+                </tr>
+                <tr>
+                  <td>Capgemini</td>
+                  <td>Engineering R&D services, embedded programming</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+                        <div class="footer-logo">
+          <img src="images/horizontal-logo-transparent.png" alt="VITS iResource Hub">
+        </div>
+        <p>Your one-stop resource portal for VITS students. Access academic materials, software, GATE prep, and placement resources — all in one place.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="software.html">Software</a></li>
+          <li><a href="gate.html">GATE Prep</a></li>
+          <li><a href="placements.html">Placements</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="academics.html">📚 Syllabus Accordions</a></li>
+          <li><a href="software.html">💿 37+ Core Software Tools</a></li>
+          <li><a href="gate.html">🎯 GATE Preparation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://github.com/Manideepvelchuri" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="mailto:vignanecefourier2529@gmail.com">📧 Email Coordinator</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 VITS iResource Hub. Made with ❤️ for engineering students.</span>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- Scripts -->
+  <script src="js/main.js?v=1.2"></script>
+</body>
+</html>

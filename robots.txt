@@ -1,0 +1,10 @@
+# ECE Hub JNTUH - Robots.txt
+# https://ecehub.tech
+
+User-agent: *
+Allow: /
+
+Sitemap: https://ecehub.tech/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1

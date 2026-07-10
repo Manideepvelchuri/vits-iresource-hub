@@ -1,0 +1,20 @@
+# Unnecessary root files
+Executive Summary.pdf
+Ultimate_Engineering_Student_Resources_Report.pdf
+Screenshot_2026-07-10-23-12-18-91.jpg.jpeg
+Screenshot_2026-07-10-23-12-59-75.jpg.jpeg
+all resorces hub.jpeg
+ece imp resources guide.jpeg
+horizontal logo.png
+uper navibar logo.png
+ChatGPT Image*.png
+
+# OS files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Editor files
+.vscode/
+*.swp
+*.swo

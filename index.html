@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VITS iResource Hub — Ultimate Resources for Engineering & Science</title>
+  <meta name="description" content="Centralized resource hub for VITS engineering students. Download syllabus, engineering textbooks, lab manuals, GATE preparation tools, placement coding resources, and academic software.">
+  <meta name="keywords" content="VITS iResource Hub, ECE Resources, JNTUH B.Tech ECE, GATE ECE preparation, ECE placement materials, JNTUH R22 syllabus, JNTUH R25 ECE, ECE software download, engineering study materials">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="VITS iResource Hub — Ultimate Student Portal">
+  <meta property="og:description" content="Access textbooks, notes, lab manuals, GATE prep, placement resources, and download official academic software for VITS students for free.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ecehub.tech">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css?v=1.2">
+  
+  <!-- Schema.org markup for Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "VITS iResource Hub",
+    "url": "https://ecehub.tech",
+    "description": "Comprehensive resource hub for VITS engineering and science students."
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+                  <a href="index.html" class="nav-logo">
+        <img src="images/navbar-logo.png" alt="VITS iResource Hub">
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">🏠 Home</a></li>
+        <li><a href="academics.html">📚 Academics</a></li>
+        <li><a href="software.html">💻 Software</a></li>
+        <li><a href="gate.html">🎯 GATE</a></li>
+        <li><a href="placements.html">🏢 Placements</a></li>
+        <li><a href="useful-links.html">🔗 Links</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀️</button>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-bg">
+      <div class="hero-orb"></div>
+      <div class="hero-orb"></div>
+      <div class="hero-orb"></div>
+    </div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>🎓 VITS iResource Hub — Unified JNTUH Academic & Lab Library</span>
+      </div>
+      <h1 class="hero-title">
+        Your Complete <br>
+        <span class="gradient-text">Academic Resource Hub</span>
+      </h1>
+      <p class="hero-subtitle">
+        Access textbook PDFs, classroom lecture slides, mid-exam guides, and placement coding resources. Download core engineering software — all in one place.
+      </p>
+      <div class="hero-actions">
+        <a href="https://drive.google.com/drive/folders/1bInXkRc9mQFdbVbUMNxG1VVnrpKEyoPN?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn btn-drive btn-lg">📂 Open Google Drive</a>
+        <a href="software.html" class="btn btn-secondary btn-lg">💻 Download Software</a>
+      </div>
+      
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="stat-value">35+</div>
+          <div class="stat-label">Software Tools</div>
+        </div>
+        <div class="hero-stat">
+          <div class="stat-value">150+</div>
+          <div class="stat-label">Academic PDFs</div>
+        </div>
+        <div class="hero-stat">
+          <div class="stat-value">8</div>
+          <div class="stat-label">Semesters Mapped</div>
+        </div>
+        <div class="hero-stat">
+          <div class="stat-value">5+</div>
+          <div class="stat-label">Branches Covered</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Dashboard Section (New dashboard right after Hero as requested!) -->
+  <section class="section section-alt reveal" id="dashboard">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Real-Time updates</span>
+        <h2 class="section-title">🚀 Student iDashboard</h2>
+        <p class="section-desc">Quick look at recent uploads, popular tools, syllabus additions, and upcoming events.</p>
+      </div>
+
+      <!-- Dashboard Grid -->
+      <div class="cards-grid">
+        <!-- 📢 Latest Updates -->
+        <div class="card">
+          <div style="font-size: var(--text-2xl); margin-bottom: 10px;">📢</div>
+          <h3 class="card-title">Latest Updates</h3>
+          <ul style="list-style:none; padding:0; color:var(--text-secondary); font-size:var(--text-sm);">
+            <li style="margin-bottom:8px;">✅ R25 ECE Syllabus mapped to Drive.</li>
+            <li style="margin-bottom:8px;">✅ Added 11 individual AI engineering links.</li>
+            <li style="margin-bottom:8px;">✅ Added Research & Book hubs.</li>
+          </ul>
+        </div>
+
+        <!-- 📂 Recently Added PDFs -->
+        <div class="card">
+          <div style="font-size: var(--text-2xl); margin-bottom: 10px;">📂</div>
+          <h3 class="card-title">Recently Added PDFs</h3>
+          <ul style="list-style:none; padding:0; color:var(--text-secondary); font-size:var(--text-sm);">
+            <li style="margin-bottom:8px;">📄 JNTUH R25 I-Year Syllabus.pdf</li>
+            <li style="margin-bottom:8px;">📄 Network Analysis Unit 1 Notes.pdf</li>
+            <li style="margin-bottom:8px;">📄 EDC Small Signal Analysis Slides.pdf</li>
+          </ul>
+        </div>
+
+        <!-- 📈 Trending Resources -->
+        <div class="card">
+          <div style="font-size: var(--text-2xl); margin-bottom: 10px;">📈</div>
+          <h3 class="card-title">Trending Resources</h3>
+          <ul style="list-style:none; padding:0; color:var(--text-secondary); font-size:var(--text-sm);">
+            <li style="margin-bottom:8px;">🔥 Striver's A2Z DSA Placement Sheet</li>
+            <li style="margin-bottom:8px;">🔥 Google Drive Textbooks folder</li>
+            <li style="margin-bottom:8px;">🔥 GATE ECE 2025 PYQ Solutions</li>
+          </ul>
+        </div>
+
+        <!-- 💻 Popular Software -->
+        <div class="card">
+          <div style="font-size: var(--text-2xl); margin-bottom: 10px;">💻</div>
+          <h3 class="card-title">Popular Software</h3>
+          <ul style="list-style:none; padding:0; color:var(--text-secondary); font-size:var(--text-sm);">
+            <li style="margin-bottom:8px;">💿 MathWorks MATLAB campus link</li>
+            <li style="margin-bottom:8px;">💿 LTspice Analog simulator</li>
+            <li style="margin-bottom:8px;">💿 AMD Xilinx Vivado (Basic tier)</li>
+          </ul>
+        </div>
+
+        <!-- 📋 New Syllabus -->
+        <div class="card">
+          <div style="font-size: var(--text-2xl); margin-bottom: 10px;">📋</div>
+          <h3 class="card-title">New Syllabus (R25)</h3>
+          <ul style="list-style:none; padding:0; color:var(--text-secondary); font-size:var(--text-sm);">
+            <li style="margin-bottom:8px;">✏️ Mathematics I (Calculus)</li>
+            <li style="margin-bottom:8px;">✏️ Engineering Chemistry</li>
+            <li style="margin-bottom:8px;">✏️ Applied Python Programming</li>
+          </ul>
+        </div>
+
+        <!-- 📅 Upcoming Exams -->
+        <div class="card">
+          <div style="font-size: var(--text-2xl); margin-bottom: 10px;">📅</div>
+          <h3 class="card-title">Upcoming Exams</h3>
+          <ul style="list-style:none; padding:0; color:var(--text-secondary); font-size:var(--text-sm);">
+            <li style="margin-bottom:8px;">⏰ JNTUH Semester-End externals (July)</li>
+            <li style="margin-bottom:8px;">⏰ Midterm Review Papers added</li>
+            <li style="margin-bottom:8px;">⏰ Lab external viva questions</li>
+          </ul>
+        </div>
+
+        <!-- 🏢 Placement News -->
+        <div class="card">
+          <div style="font-size: var(--text-2xl); margin-bottom: 10px;">🏢</div>
+          <h3 class="card-title">Placement News</h3>
+          <ul style="list-style:none; padding:0; color:var(--text-secondary); font-size:var(--text-sm);">
+            <li style="margin-bottom:8px;">💼 Qualcomm recruitment drive (VLSI)</li>
+            <li style="margin-bottom:8px;">💼 TCS NQT registration links active</li>
+            <li style="margin-bottom:8px;">💼 NVIDIA developer internship drives</li>
+          </ul>
+        </div>
+
+        <!-- 💼 Internship Alerts -->
+        <div class="card">
+          <div style="font-size: var(--text-2xl); margin-bottom: 10px;">💼</div>
+          <h3 class="card-title">Internship Alerts</h3>
+          <ul style="list-style:none; padding:0; color:var(--text-secondary); font-size:var(--text-sm);">
+            <li style="margin-bottom:8px;">📢 AICTE National Internship drives open</li>
+            <li style="margin-bottom:8px;">📢 Google Summer of Code (GSoC) timeline</li>
+            <li style="margin-bottom:8px;">📢 Internshala paid summer slots</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Drive Prominent CTA Section -->
+  <section class="section reveal">
+    <div class="container">
+      <div class="drive-card">
+        <div class="drive-icon">📂</div>
+        <h2>VITS iResource Google Drive Library</h2>
+        <p>
+          Access the shared digital library containing all textbooks, mid exam models, previous years' question sheets, and lab manual PDFs. No registration needed.
+        </p>
+        <div class="mt-6">
+          <a href="https://drive.google.com/drive/folders/1bInXkRc9mQFdbVbUMNxG1VVnrpKEyoPN?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn btn-drive btn-lg">🚀 Go to Google Drive Library</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Access Portal Sections -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Portals</span>
+        <h2 class="section-title">Quick Access Portals</h2>
+        <p class="section-desc">Instantly jump to academic files, download repositories, or placement and certification guides.</p>
+      </div>
+
+      <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: var(--space-4);">
+        <!-- Academics -->
+        <a href="academics.html" class="card reveal reveal-delay-1" style="text-decoration: none; padding: var(--space-6); text-align: center; display: block; height: auto;">
+          <div style="font-size: var(--text-3xl); margin-bottom: 10px;">📚</div>
+          <h3 class="card-title" style="font-size: var(--text-lg); margin-bottom: 4px;">Academics</h3>
+          <p style="font-size: var(--text-xs); color: var(--text-secondary); margin: 0; line-height: 1.4;">8-Semester JNTUH plans & resources</p>
+        </a>
+
+        <!-- Software -->
+        <a href="software.html" class="card reveal reveal-delay-2" style="text-decoration: none; padding: var(--space-6); text-align: center; display: block; height: auto;">
+          <div style="font-size: var(--text-3xl); margin-bottom: 10px;">💻</div>
+          <h3 class="card-title" style="font-size: var(--text-lg); margin-bottom: 4px;">Software</h3>
+          <p style="font-size: var(--text-xs); color: var(--text-secondary); margin: 0; line-height: 1.4;">37+ Lab simulation & CAD tools</p>
+        </a>
+
+        <!-- GATE Prep -->
+        <a href="gate.html" class="card reveal reveal-delay-3" style="text-decoration: none; padding: var(--space-6); text-align: center; display: block; height: auto;">
+          <div style="font-size: var(--text-3xl); margin-bottom: 10px;">🎯</div>
+          <h3 class="card-title" style="font-size: var(--text-lg); margin-bottom: 4px;">GATE Prep</h3>
+          <p style="font-size: var(--text-xs); color: var(--text-secondary); margin: 0; line-height: 1.4;">YT channels, mock tests & books</p>
+        </a>
+
+        <!-- Placements -->
+        <a href="placements.html" class="card reveal reveal-delay-1" style="text-decoration: none; padding: var(--space-6); text-align: center; display: block; height: auto;">
+          <div style="font-size: var(--text-3xl); margin-bottom: 10px;">🏢</div>
+          <h3 class="card-title" style="font-size: var(--text-lg); margin-bottom: 4px;">Placements</h3>
+          <p style="font-size: var(--text-xs); color: var(--text-secondary); margin: 0; line-height: 1.4;">DSA sheets, resume & mock prep</p>
+        </a>
+
+        <!-- Useful Links -->
+        <a href="useful-links.html" class="card reveal reveal-delay-2" style="text-decoration: none; padding: var(--space-6); text-align: center; display: block; height: auto;">
+          <div style="font-size: var(--text-3xl); margin-bottom: 10px;">🔗</div>
+          <h3 class="card-title" style="font-size: var(--text-lg); margin-bottom: 4px;">Useful Links</h3>
+          <p style="font-size: var(--text-xs); color: var(--text-secondary); margin: 0; line-height: 1.4;">JNTUH portals, scholarships & tips</p>
+        </a>
+
+        <!-- Dev Pack -->
+        <a href="useful-links.html#student-benefits" class="card reveal reveal-delay-3" style="text-decoration: none; padding: var(--space-6); text-align: center; display: block; height: auto;">
+          <div style="font-size: var(--text-3xl); margin-bottom: 10px;">🛠️</div>
+          <h3 class="card-title" style="font-size: var(--text-lg); margin-bottom: 4px;">Dev Pack</h3>
+          <p style="font-size: var(--text-xs); color: var(--text-secondary); margin: 0; line-height: 1.4;">GitHub Developer pack tools</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recommended Skill Roadmap Section (New!) -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Roadmap</span>
+        <h2 class="section-title">Interactive Skill Roadmap</h2>
+        <p class="section-desc">Click any card to open the official skill path guides, learning roadmaps, or compiler tutorials.</p>
+      </div>
+
+      <div class="cards-grid" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: var(--space-6);">
+        <!-- Step 1 -->
+        <a href="https://www.w3schools.com/c/index.php" target="_blank" rel="noopener noreferrer" class="card reveal" style="border-left: 4px solid var(--primary-light); text-decoration: none; display: block; height: auto;">
+          <div style="font-size: var(--text-2xl); font-weight: 800; color: var(--primary-light); margin-bottom: var(--space-3);">01</div>
+          <h3 class="card-title" style="margin-top: 0;">C / C++ Programming →</h3>
+          <p class="card-desc">Start with C fundamentals — pointers, structures, file handling. Build a strong foundation before moving to data structures.</p>
+        </a>
+        <!-- Step 2 -->
+        <a href="https://www.geeksforgeeks.org/python-programming-language-tutorial/" target="_blank" rel="noopener noreferrer" class="card reveal" style="border-left: 4px solid var(--accent-light); text-decoration: none; display: block; height: auto;">
+          <div style="font-size: var(--text-2xl); font-weight: 800; color: var(--accent-light); margin-bottom: var(--space-3);">02</div>
+          <h3 class="card-title" style="margin-top: 0;">Python & Automation →</h3>
+          <p class="card-desc">Learn Python for scripting, data analysis, and lab automation. Essential for MATLAB alternatives and machine learning basics.</p>
+        </a>
+        <!-- Step 3 -->
+        <a href="https://nptel.ac.in/courses" target="_blank" rel="noopener noreferrer" class="card reveal" style="border-left: 4px solid var(--secondary-light); text-decoration: none; display: block; height: auto;">
+          <div style="font-size: var(--text-2xl); font-weight: 800; color: var(--secondary-light); margin-bottom: var(--space-3);">03</div>
+          <h3 class="card-title" style="margin-top: 0;">NPTEL Courses →</h3>
+          <p class="card-desc">Enroll in NPTEL courses for extra credits and deep subject understanding. Certificates accepted by JNTUH for elective credits.</p>
+        </a>
+        <!-- Step 4 -->
+        <a href="software.html" class="card reveal" style="border-left: 4px solid var(--primary-light); text-decoration: none; display: block; height: auto;">
+          <div style="font-size: var(--text-2xl); font-weight: 800; color: var(--primary-light); margin-bottom: var(--space-3);">04</div>
+          <h3 class="card-title" style="margin-top: 0;">Branch Simulators & CAD →</h3>
+          <p class="card-desc">Install and learn domain-specific tools — Vivado, Keil, LTspice for ECE; SolidWorks for Mech; AutoCAD for Civil.</p>
+        </a>
+        <!-- Step 5 -->
+        <a href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer" class="card reveal" style="border-left: 4px solid var(--accent-light); text-decoration: none; display: block; height: auto;">
+          <div style="font-size: var(--text-2xl); font-weight: 800; color: var(--accent-light); margin-bottom: var(--space-3);">05</div>
+          <h3 class="card-title" style="margin-top: 0;">Research & Publications →</h3>
+          <p class="card-desc">Use Google Scholar, IEEE Xplore, and ResearchGate to read papers. Start contributing to journals from 3rd year onwards.</p>
+        </a>
+        <!-- Step 6 -->
+        <a href="gate.html" class="card reveal" style="border-left: 4px solid var(--secondary-light); text-decoration: none; display: block; height: auto;">
+          <div style="font-size: var(--text-2xl); font-weight: 800; color: var(--secondary-light); margin-bottom: var(--space-3);">06</div>
+          <h3 class="card-title" style="margin-top: 0;">GATE Preparation →</h3>
+          <p class="card-desc">Access curated GATE resources — PYQs, mock tests, subject-wise lectures, and recommended books for each topic.</p>
+        </a>
+        <!-- Step 7 -->
+        <a href="https://aws.amazon.com/education/awseducate/" target="_blank" rel="noopener noreferrer" class="card reveal" style="border-left: 4px solid var(--primary-light); text-decoration: none; display: block; height: auto;">
+          <div style="font-size: var(--text-2xl); font-weight: 800; color: var(--primary-light); margin-bottom: var(--space-3);">07</div>
+          <h3 class="card-title" style="margin-top: 0;">Cloud & DevOps →</h3>
+          <p class="card-desc">Get started with AWS Educate, Azure for Students, or Google Cloud. Learn to deploy apps and manage cloud infrastructure.</p>
+        </a>
+        <!-- Step 8 -->
+        <a href="placements.html" class="card reveal" style="border-left: 4px solid var(--accent-light); text-decoration: none; display: block; height: auto;">
+          <div style="font-size: var(--text-2xl); font-weight: 800; color: var(--accent-light); margin-bottom: var(--space-3);">08</div>
+          <h3 class="card-title" style="margin-top: 0;">Placements & Interviews →</h3>
+          <p class="card-desc">Practice on LeetCode, HackerRank, and PrepInsta. Prepare aptitude, coding rounds, and HR interviews for campus placements.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+                        <div class="footer-logo">
+          <img src="images/horizontal-logo-transparent.png" alt="VITS iResource Hub">
+        </div>
+        <p>Your one-stop resource portal for VITS students. Access academic materials, software, GATE prep, and placement resources — all in one place.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="software.html">Software</a></li>
+          <li><a href="gate.html">GATE Prep</a></li>
+          <li><a href="placements.html">Placements</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="academics.html">📚 Syllabus Accordions</a></li>
+          <li><a href="software.html">💿 37+ Core Software Tools</a></li>
+          <li><a href="gate.html">🎯 GATE Preparation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://github.com/Manideepvelchuri" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="mailto:vignanecefourier2529@gmail.com">📧 Email Coordinator</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 VITS iResource Hub. Made with ❤️ for engineering students.</span>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- Scripts -->
+  <script src="js/main.js?v=1.2"></script>
+</body>
+</html>

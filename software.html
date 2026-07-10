@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering Software, Simulators & VLSI Suites — VITS iResource Hub</title>
+  <meta name="description" content="Download academic software for engineering students. Categorized directories and official links for Circuit Simulators, PCB CAD, Advanced VLSI suites (Cadence, Synopsys), Microcontrollers, and Python tools.">
+  <link rel="stylesheet" href="css/style.css?v=2.0">
+  <style>
+    .software-section-title {
+      font-family: var(--font-heading);
+      font-size: var(--text-xl);
+      font-weight: 700;
+      color: var(--primary-light);
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .software-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: var(--radius-xl);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", "Segoe UI Symbol", sans-serif;
+      font-size: 1.8rem;
+      color: initial !important;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      margin-bottom: var(--space-4);
+      transition: all var(--transition-fast);
+      flex-shrink: 0;
+    }
+    .software-card:hover .software-icon {
+      transform: scale(1.1);
+      box-shadow: var(--shadow-glow);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+                  <a href="index.html" class="nav-logo">
+        <img src="images/navbar-logo.png" alt="VITS iResource Hub">
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="academics.html">📚 Academics</a></li>
+        <li><a href="software.html" class="active">💻 Software</a></li>
+        <li><a href="gate.html">🎯 GATE</a></li>
+        <li><a href="placements.html">🏢 Placements</a></li>
+        <li><a href="useful-links.html">🔗 Links</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀️</button>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> <span>Software</span>
+      </div>
+      <div class="page-header-icon">💻</div>
+      <h1>ECE Software & Simulation Hub</h1>
+      <p>Download official CAD, VLSI, DSP, microcontroller IDEs, and open-source alternatives used in engineering labs.</p>
+    </div>
+  </header>
+
+  <!-- Filter & Search Section -->
+  <section class="section">
+    <div class="container">
+      <!-- Search Input -->
+      <div class="search-bar reveal">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Search by name, category, or lab subject...">
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">All Tools</button>
+        <button class="filter-btn" data-filter="circuits">Circuits & Mocks</button>
+        <button class="filter-btn" data-filter="pcb">PCB Layout</button>
+        <button class="filter-btn" data-filter="vlsi">VLSI & FPGA</button>
+        <button class="filter-btn" data-filter="embedded">Embedded/Micro</button>
+        <button class="filter-btn" data-filter="math">Math & DSP</button>
+        <button class="filter-btn" data-filter="programming">Coding & Dev</button>
+        <button class="filter-btn" data-filter="other">Other Branches</button>
+      </div>
+
+      <div data-search-container>
+        
+        <!-- Category 1: Circuit Simulators & Mocks -->
+        <h2 class="software-section-title reveal" data-category="circuits">🔌 Circuit Simulation & Online Mocks</h2>
+        <div class="cards-grid" data-category="circuits">
+          <!-- Wokwi Simulator -->
+          <div class="software-card reveal" data-category="circuits" data-searchable="Wokwi Simulator online ESP32 Arduino Raspberry Pi simulation programming mockup circuits">
+            <div class="software-icon icon-circuit">⚡</div>
+            <h3 class="software-title">Wokwi Simulator</h3>
+            <p class="software-desc">Top online simulator for Arduino, ESP32, Raspberry Pi, and electronic components.</p>
+            <div class="software-tags">
+              <span class="tag tag-free">Free / Online</span>
+              <span class="tag">Browser-Based</span>
+            </div>
+            <a href="https://wokwi.com" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Launch Wokwi</a>
+          </div>
+
+          <!-- LTspice -->
+          <div class="software-card reveal" data-category="circuits" data-searchable="LTspice analog circuits SPICE simulation electrical electronics">
+            <div class="software-icon icon-circuit">📉</div>
+            <h3 class="software-title">Analog Devices LTspice</h3>
+            <p class="software-desc">Industry-standard, high-performance SPICE simulator for analog circuits.</p>
+            <div class="software-tags">
+              <span class="tag tag-free">Free / Desktop</span>
+              <span class="tag">Windows / macOS</span>
+            </div>
+            <a href="https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Download Free</a>
+          </div>
+
+          <!-- Cadence PSpice -->
+          <div class="software-card reveal" data-category="circuits" data-searchable="PSpice Cadence SPICE circuit simulator schematics electrical network analysis">
+            <div class="software-icon icon-circuit">📊</div>
+            <h3 class="software-title">Cadence PSpice</h3>
+            <p class="software-desc">Advanced commercial SPICE circuit simulator with extensive component models.</p>
+            <div class="software-tags">
+              <span class="tag tag-student">Trial Version</span>
+              <span class="tag">Windows Only</span>
+            </div>
+            <a href="https://www.cadence.com/" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Visit Site</a>
+          </div>
+
+          <!-- Multisim -->
+          <div class="software-card reveal" data-category="circuits" data-searchable="Multisim NI National Instruments SPICE circuit design simulation educational">
+            <div class="software-icon icon-circuit">🔬</div>
+            <h3 class="software-title">NI Multisim</h3>
+            <p class="software-desc">Industry-standard SPICE simulation suite for digital logic and circuit labs.</p>
+            <div class="software-tags">
+              <span class="tag tag-student">Free Trial / Education</span>
+              <span class="tag">Windows / Web</span>
+            </div>
+            <a href="https://www.ni.com/multisim" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Open Multisim</a>
+          </div>
+
+          <!-- Falstad CircuitJS -->
+          <div class="software-card reveal" data-category="circuits" data-searchable="Falstad CircuitJS interactive circuit simulation browser animation current flow">
+            <div class="software-icon icon-circuit">📈</div>
+            <h3 class="software-title">Falstad CircuitJS</h3>
+            <p class="software-desc">Visual, animated electronic simulator demonstrating real-time current flows.</p>
+            <div class="software-tags">
+              <span class="tag tag-free">100% Free / Open Source</span>
+              <span class="tag">Browser / Offline</span>
+            </div>
+            <a href="https://www.falstad.com/circuit/" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Launch App</a>
+          </div>
+
+          <!-- Qucs-S -->
+          <div class="software-card reveal" data-category="circuits" data-searchable="Qucs-S GUI circuit simulator open source SPICE schematics solver">
+            <div class="software-icon icon-circuit">📡</div>
+            <h3 class="software-title">Qucs-S</h3>
+            <p class="software-desc">Quite Universal Circuit Simulator with SPICE backend. Highly extensible GUI tool.</p>
+            <div class="software-tags">
+              <span class="tag tag-free">100% Free</span>
+              <span class="tag">Windows / Linux</span>
+            </div>
+            <a href="https://qucs-s.github.io/" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Get Qucs-S</a>
+          </div>
+
+          <!-- ngspice -->
+          <div class="software-card reveal" data-category="circuits" data-searchable="ngspice open source SPICE engine circuit simulator terminal simulation solver">
+            <div class="software-icon icon-circuit">💻</div>
+            <h3 class="software-title">ngspice</h3>
+            <p class="software-desc">Open-source SPICE simulator engine, ideal for command line and script-based solving.</p>
+            <div class="software-tags">
+              <span class="tag tag-free">100% Free</span>
+              <span class="tag">Windows / Linux</span>
+            </div>
+            <a href="https://ngspice.sourceforge.io/" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Get ngspice</a>
+          </div>
+        </div>
+
+        <!-- Category 2: PCB Design & CAD -->
+        <h2 class="software-section-title reveal" data-category="pcb">🎚️ PCB Layout & Schematic Capture</h2>
+        <div class="cards-grid" data-category="pcb">
+          <!-- KiCad -->
+          <div class="software-card reveal" data-category="pcb" data-searchable="KiCad PCB design schematic layout routing electronics design editor">
+            <div class="software-icon icon-pcb">🟢</div>
+            <h3 class="software-title">KiCad PCB Suite</h3>
+            <p class="software-desc">Professional free open-source PCB schematic layout editor.</p>
+            <div class="software-tags">
+              <span class="tag tag-free">100% Free / Open Source</span>
+              <span class="tag">Windows / Mac / Linux</span>
+            </div>
+            <a href="https://www.kicad.org/" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Free Download</a>
+          </div>
+
+          <!-- Altium Designer -->
+          <div class="software-card reveal" data-category="pcb" data-searchable="Altium Designer PCB layout schematic routing hardware design circuits">
+            <div class="software-icon icon-pcb">👑</div>
+            <h3 class="software-title">Altium Designer</h3>
+            <p class="software-desc">Industry-leading premium PCB design and electronics design automation suite.</p>
+            <div class="software-tags">
+              <span class="tag tag-student">Student License</span>
+              <span class="tag">Windows Only</span>
+            </div>
+            <a href="https://www.altium.com/" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Visit Site</a>
+          </div>
+
+          <!-- Autodesk Eagle -->
+          <div class="software-card reveal" data-category="pcb" data-searchable="Autodesk Eagle PCB design schematic editor layout board layout router">
+            <div class="software-icon icon-pcb">🦅</div>
+            <h3 class="software-title">Autodesk Eagle</h3>
+            <p class="software-desc">Classic PCB design tool featuring schematic capture and auto-routing features.</p>
+            <div class="software-tags">
+              <span class="tag tag-student">Free student access</span>
+              <span class="tag">Windows / Mac / Linux</span>
+            </div>
+            <a href="https://www.autodesk.com/products/eagle/overview" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Get Eagle</a>
+          </div>
+
+          <!-- Proteus -->
+          <div class="software-card reveal" data-category="pcb" data-searchable="Proteus Labcenter PCB design schematic microcontroller simulation interactive virtual components">
+            <div class="software-icon icon-micro">🏛️</div>
+            <h3 class="software-title">Labcenter Proteus</h3>
+            <p class="software-desc">PCB layout designer and co-simulation tool for microcontrollers & SPICE circuits.</p>
+            <div class="software-tags">
+              <span class="tag tag-student">Paid / Student Demo</span>
+              <span class="tag">Windows Only</span>
+            </div>
+            <a href="https://www.labcenter.com/" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Get Proteus</a>
+          </div>
+
+          <!-- EasyEDA -->
+          <div class="software-card reveal" data-category="pcb" data-searchable="EasyEDA online PCB design layout routing parts library lcsc jlpcb">
+            <div class="software-icon icon-pcb">⚡</div>
+            <h3 class="software-title">EasyEDA</h3>
+            <p class="software-desc">Web-based EDA tool suite, deeply integrated with LCSC parts catalog and JLCPCB manufacturing.</p>
+            <div class="software-tags">
+              <span class="tag tag-free">Free / Online</span>
+              <span class="tag">Browser / Desktop</span>
+            </div>
+            <a href="https://easyeda.com" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Open Web App</a>
+          </div>
+        </div>
+
+        <!-- Category 3: Advanced VLSI & FPGA Suites -->
+        <h2 class="software-section-title reveal" data-category="vlsi">💎 Advanced VLSI & FPGA Design Suites</h2>
+        <div class="cards-grid" data-category="vlsi">
+          <!-- Cadence Virtuoso -->
+          <div class="software-card reveal" data-category="vlsi" data-searchable="Cadence Virtuoso IC layout schematic capture custom silicon analog digital VLSI chip design">
+            <div class="software-icon icon-vlsi">💎</div>
+            <h3 class="software-title">Cadence Virtuoso</h3>
+            <p class="software-desc">Standard custom IC layout and schematic capture platform for physical silicon design.</p>
+            <div class="software-tags">
+              <span class="tag tag-university">Institutional License</span>
+              <span class="tag">Linux / Unix</span>
+            </div>
+            <a href="https://www.cadence.com" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Official Site</a>
+          </div>
+
+          <!-- Synopsys Design Compiler -->
+          <div class="software-card reveal" data-category="vlsi" data-searchable="Synopsys Design Compiler synthesis timing physical compiler VLSI RTL netlist compiler">
+            <div class="software-icon icon-vlsi">💎</div>
+            <h3 class="software-title">Synopsys Design Compiler</h3>
+            <p class="software-desc">Industry-standard RTL logic synthesis engine mapping HDL to target technology gates.</p>
+            <div class="software-tags">
+              <span class="tag tag-university">Institutional License</span>
+              <span class="tag">Linux</span>
+            </div>
+            <a href="https://www.synopsys.com" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Official Site</a>
+          </div>
+
+          <!-- Siemens Calibre -->
+          <div class="software-card reveal" data-category="vlsi" data-searchable="Siemens Calibre Mentor Graphics DRC LVS physical verification silicon chip layout checking">
+            <div class="software-icon icon-vlsi">💎</div>
+            <h3 class="software-title">Siemens Calibre</h3>
+            <p class="software-desc">Leading physical verification platform checking layout design rules (DRC & LVS).</p>
+            <div class="software-tags">
+              <span class="tag tag-university">Institutional License</span>
+              <span class="tag">Linux</span>
+            </div>
+            <a href="https://eda.sw.siemens.com" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Visit Site</a>
+          </div>
+
+          <!-- AMD Xilinx Vivado -->
+          <div class="software-card reveal" data-category="vlsi" data-searchable="Vivado AMD Xilinx FPGA VLSI Verilog VHDL Digital Logic design synthesis">
+            <div class="software-icon icon-fpga">👾</div>
+            <h3 class="software-title">AMD Xilinx Vivado</h3>
+            <p class="software-desc">FPGA/SoC design suite for HDL synthesis and hardware verification (Free Basic tier).</p>
+            <div class="software-tags">
+              <span class="tag tag-free">Free WebPack</span>
+              <span class="tag">Windows / Linux</span>
+            </div>
+            <a href="https://www.xilinx.com/support/download.html" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Download SDK</a>
+          </div>
+
+          <!-- Xilinx ISE -->
+          <div class="software-card reveal" data-category="vlsi" data-searchable="Xilinx ISE design suite legacy FPGA CPLD digital circuits compiler">
+            <div class="software-icon icon-fpga">💾</div>
+            <h3 class="software-title">Xilinx ISE Design Suite</h3>
+            <p class="software-desc">Legacy FPGA compilation suite, required for older development boards and CPLDs.</p>
+            <div class="software-tags">
+              <span class="tag tag-free">Free Classic</span>
+              <span class="tag">Windows / Linux</span>
+            </div>
+            <a href="https://www.xilinx.com/products/design-tools/ise-design-suite.html" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Get ISE Classic</a>
+          </div>
+
+          <!-- Intel Quartus Prime -->
+          <div class="software-card reveal" data-category="vlsi" data-searchable="Intel Quartus Prime Altera FPGA design synthesizer VHDL Verilog cyclone lite">
+            <div class="software-icon icon-fpga">🌀</div>
+            <h3 class="software-title">Intel Quartus Prime Lite</h3>
+            <p class="software-desc">FPGA design software supporting schematic entry, VHDL/Verilog synthesis, and simulation.</p>
+            <div class="software-tags">
+              <span class="tag tag-free">Free Lite Edition</span>
+              <span class="tag">Windows / Linux</span>
+            </div>
+            <a href="https://www.intel.com/content/www/us/en/software/programmable/quartus-prime/download.html" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Get Quartus</a>
+          </div>
+
+          <!-- ModelSim (Siemens) -->
+          <div class="software-card reveal" data-category="vlsi" data-searchable="ModelSim Siemens Mentor Graphics HDL simulator Verilog VHDL VLSI digital logic simulation starter">
+            <div class="software-icon icon-vlsi">🖥️</div>
+            <h3 class="software-title">Siemens ModelSim</h3>
+            <p class="software-desc">Standard HDL simulation tool for Verilog, SystemVerilog, and VHDL digital design.</p>
+            <div class="software-tags">
+              <span class="tag tag-student">Free Starter Edition</span>
+              <span class="tag">Windows / Linux</span>
+            </div>
+            <a href="https://eda.sw.siemens.com" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Official Download</a>
+          </div>
+
+          <!-- Logisim Evolution -->
+          <div class="software-card reveal" data-category="vlsi" data-searchable="Logisim Evolution digital logic gate simulator schematic drawer registers cpu simulation">
+            <div class="software-icon icon-vlsi">🔌</div>
+            <h3 class="software-title">Logisim Evolution</h3>
+            <p class="software-desc">Educational digital logic simulator supporting schematic drawing, CPU design, and simulation.</p>
+            <div class="software-tags">
+              <span class="tag tag-free">100% Free / Open Source</span>
+              <span class="tag">Windows / Mac / Linux</span>
+            </div>
+            <a href="https://github.com/logisim-evolution/logisim-evolution" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Get Logisim</a>
+          </div>
+
+          <!-- OpenLane -->
+          <div class="software-card reveal" data-category="vlsi" data-searchable="OpenLane OpenROAD open source VLSI flow silicon tapeout RTL to GDSII ASIC design skywater">
+            <div class="software-icon icon-vlsi">🏗️</div>
+            <h3 class="software-title">OpenLane / OpenROAD</h3>
+            <p class="software-desc">Automated open-source digital ASIC flow converting RTL code to GDSII layout files.</p>
+            <div class="software-tags">
+              <span class="tag tag-free">100% Free / Open Source</span>
+              <span class="tag">Linux / Docker</span>
+            </div>
+            <a href="https://github.com/The-OpenROAD-Project/OpenLane" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">GitHub Repo</a>
+          </div>
+
+          <!-- Magic VLSI -->
+          <div class="software-card reveal" data-category="vlsi" data-searchable="Magic VLSI layout editor open source analog custom cells layout generator silicon tool">
+            <div class="software-icon icon-vlsi">🎨</div>
+            <h3 class="software-title">Magic VLSI Layout</h3>
+            <p class="software-desc">Classic open-source custom layout editor featuring real-time DRC checking.</p>
+            <div class="software-tags">
+              <span class="tag tag-free">100% Free</span>
+              <span class="tag">Linux / Mac</span>
+            </div>
+            <a href="http://opencircuitdesign.com/magic/" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Get Magic</a>
+          </div>
+
+          <!-- Electric VLSI -->
+          <div class="software-card reveal" data-category="vlsi" data-searchable="Electric VLSI layout designer open source schematic capture custom chips routing">
+            <div class="software-icon icon-vlsi">⚡</div>
+            <h3 class="software-title">Electric VLSI System</h3>
+            <p class="software-desc">Open-source electrical CAD system handling custom IC layout, schematic capture, and routing.</p>
+            <div class="software-tags">
+              <span class="tag tag-free">100% Free</span>
+              <span class="tag">Java Runtime</span>
+            </div>
+            <a href="https://www.gnu.org/software/electric/electric.html" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Get Electric</a>
+          </div>
+        </div>
+
+        <!-- Category 4: Embedded Systems & Microcontrollers -->
+        <h2 class="software-section-title reveal" data-category="embedded">🤖 Embedded Systems & Microcontrollers</h2>
+        <div class="cards-grid" data-category="embedded">
+          <!-- Keil uVision -->
+          <div class="software-card reveal" data-category="embedded" data-searchable="Keil uVision microcontrollers ARM 8051 assembly embedded systems IDE MDK">
+            <div class="software-icon icon-micro">💻</div>
+            <h3 class="software-title">Keil µVision</h3>
+            <p class="software-desc">Professional ARM MDK and 8051 assembly embedded development compiler IDE.</p>
+            <div class="software-tags">
+              <span class="tag tag-free">MDK Community</span>
+              <span class="tag">Windows Only</span>
+            </div>
+            <a href="https://www.keil.com/download/" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Get MDK ARM</a>
+          </div>
+
+          <!-- STM32CubeIDE -->
+          <div class="software-card reveal" data-category="embedded" data-searchable="STM32CubeIDE STM32 ARM Cortex M development IDE compiler debugger STMicroelectronics">
+            <div class="software-icon icon-micro">🧊</div>
+            <h3 class="software-title">STM32CubeIDE</h3>
+            <p class="software-desc">C/C++ development platform for STM32 microcontrollers with config and compiler.</p>
+            <div class="software-tags">
+              <span class="tag tag-free">100% Free</span>
+              <span class="tag">Windows / Mac / Linux</span>
+            </div>
+            <a href="https://www.st.com/en/development-tools/stm32cubeide.html" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Get CubeIDE</a>
+          </div>
+
+          <!-- MPLAB X IDE -->
+          <div class="software-card reveal" data-category="embedded" data-searchable="MPLAB X IDE Microchip PIC AVR microcontroller embedded compiler assembler">
+            <div class="software-icon icon-micro">🎛️</div>
+            <h3 class="software-title">Microchip MPLAB X IDE</h3>
+            <p class="software-desc">Official development compiler environment for PIC and AVR microcontrollers.</p>
+            <div class="software-tags">
+              <span class="tag tag-free">Free Download</span>
+              <span class="tag">Windows / Mac / Linux</span>
+            </div>
+            <a href="https://www.microchip.com/mplabx" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Download IDE</a>
+          </div>
+
+          <!-- Energia -->
+          <div class="software-card reveal" data-category="embedded" data-searchable="Energia Texas Instruments MSP430 LaunchPad IDE programming C arduino like">
+            <div class="software-icon icon-micro">🔋</div>
+            <h3 class="software-title">TI Energia IDE</h3>
+            <p class="software-desc">Arduino-like programming environment for Texas Instruments MSP430 microcontrollers.</p>
+            <div class="software-tags">
+              <span class="tag tag-free">Free / Open Source</span>
+              <span class="tag">Windows / Mac / Linux</span>
+            </div>
+            <a href="http://energia.nu/" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Get Energia</a>
+          </div>
+
+          <!-- PlatformIO -->
+          <div class="software-card reveal" data-category="embedded" data-searchable="PlatformIO VS Code extension embedded systems microcontroller compiler libraries">
+            <div class="software-icon icon-micro">🚀</div>
+            <h3 class="software-title">PlatformIO</h3>
+            <p class="software-desc">Next-generation professional collaborative platform for embedded development (VS Code extension).</p>
+            <div class="software-tags">
+              <span class="tag tag-free">100% Free</span>
+              <span class="tag">Windows / Mac / Linux</span>
+            </div>
+            <a href="https://platformio.org/" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Get PlatformIO</a>
+          </div>
+
+          <!-- Arduino IDE -->
+          <div class="software-card reveal" data-category="embedded" data-searchable="Arduino IDE electronics Microcontroller IoT embedded C C++ scripting">
+            <div class="software-icon icon-micro">♾️</div>
+            <h3 class="software-title">Arduino IDE</h3>
+            <p class="software-desc">Open-source electronics prototyping platform IDE for AVR/ARM/ESP32.</p>
+            <div class="software-tags">
+              <span class="tag tag-free">100% Free</span>
+              <span class="tag">Windows / Mac / Linux</span>
+            </div>
+            <a href="https://www.arduino.cc/en/software" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Download IDE</a>
+          </div>
+        </div>
+
+        <!-- Category 5: Scientific Computing & DSP -->
+        <h2 class="software-section-title reveal" data-category="math">📊 Scientific Computing, DSP & Radio</h2>
+        <div class="cards-grid" data-category="math">
+          <!-- MATLAB -->
+          <div class="software-card reveal" data-category="math" data-searchable="MATLAB mathworks mathematical computing signals systems control DSP simulation">
+            <div class="software-icon icon-matlab">📉</div>
+            <h3 class="software-title">MathWorks MATLAB</h3>
+            <p class="software-desc">Industry-standard high-level numerical computing & simulation environments.</p>
+            <div class="software-tags">
+              <span class="tag tag-student">Campus License / Student</span>
+              <span class="tag">Windows / Mac / Linux</span>
+            </div>
+            <a href="https://www.mathworks.com/academia/tah-portal.html" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Get MATLAB</a>
+          </div>
+
+          <!-- Simulink -->
+          <div class="software-card reveal" data-category="math" data-searchable="Simulink MathWorks dynamic systems block diagrams modeling control simulation">
+            <div class="software-icon icon-matlab">🧱</div>
+            <h3 class="software-title">MathWorks Simulink</h3>
+            <p class="software-desc">Block diagram environment for multi-domain simulation and Model-Based Design.</p>
+            <div class="software-tags">
+              <span class="tag tag-student">Campus License</span>
+              <span class="tag">Windows / Mac / Linux</span>
+            </div>
+            <a href="https://www.mathworks.com/products/simulink.html" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Get Simulink</a>
+          </div>
+
+          <!-- GNU Octave -->
+          <div class="software-card reveal" data-category="math" data-searchable="GNU Octave free MATLAB compatible alternative numerical computing matrices plot graphs">
+            <div class="software-icon icon-matlab">📊</div>
+            <h3 class="software-title">GNU Octave</h3>
+            <p class="software-desc">Completely free, open-source MATLAB-compatible environment for numerical matrix solvers.</p>
+            <div class="software-tags">
+              <span class="tag tag-free">100% Free / Open Source</span>
+              <span class="tag">Windows / Mac / Linux</span>
+            </div>
+            <a href="https://octave.org/download" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Free Download</a>
+          </div>
+
+          <!-- Scilab -->
+          <div class="software-card reveal" data-category="math" data-searchable="Scilab Dassault simulation engineering computation numerical variables matrices plot">
+            <div class="software-icon icon-matlab">➗</div>
+            <h3 class="software-title">Scilab + Xcos</h3>
+            <p class="software-desc">Open-source computing and Simulink alternative by Dassault Systèmes for system design.</p>
+            <div class="software-tags">
+              <span class="tag tag-free">Free / Open Source</span>
+              <span class="tag">Windows / Mac / Linux</span>
+            </div>
+            <a href="https://www.scilab.org/download" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Download Scilab</a>
+          </div>
+
+          <!-- Code Composer Studio -->
+          <div class="software-card reveal" data-category="math" data-searchable="Code Composer Studio CCS TI Texas Instruments DSP simulator compiler JTAG debugger">
+            <div class="software-icon icon-dsp">🎛️</div>
+            <h3 class="software-title">Code Composer Studio (CCS)</h3>
+            <p class="software-desc">Integrated development environment for TI microcontrollers and DSP processors.</p>
+            <div class="software-tags">
+              <span class="tag tag-free">Free IDE</span>
+              <span class="tag">Windows / Linux</span>
+            </div>
+            <a href="https://www.ti.com/tool/CCSTUDIO" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Get CCS</a>
+          </div>
+
+          <!-- GNU Radio -->
+          <div class="software-card reveal" data-category="math" data-searchable="GNU Radio SDR software defined radio wireless communications signal processing simulation DSP">
+            <div class="software-icon icon-dsp">📻</div>
+            <h3 class="software-title">GNU Radio Toolkit</h3>
+            <p class="software-desc">Open-source SDR software-defined radio kit for DSP and wireless comm simulations.</p>
+            <div class="software-tags">
+              <span class="tag tag-free">Free / Open Source</span>
+              <span class="tag">Linux / Mac / Windows</span>
+            </div>
+            <a href="https://www.gnuradio.org/" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Get GNU Radio</a>
+          </div>
+        </div>
+
+        <!-- Category 6: Dev Tools & Code Editors -->
+        <h2 class="software-section-title reveal" data-category="programming">💻 Coding Utilities & Developer Editors</h2>
+        <div class="cards-grid" data-category="programming">
+          <!-- VS Code -->
+          <div class="software-card reveal" data-category="programming" data-searchable="VS Code visual studio microsoft code editor programming compiler IDE python C C++ verilog">
+            <div class="software-icon icon-code">📝</div>
+            <h3 class="software-title">Visual Studio Code</h3>
+            <p class="software-desc">Extensible, lightweight code editor supporting all programming languages and plugins.</p>
+            <div class="software-tags">
+              <span class="tag tag-free">Free / Microsoft</span>
+              <span class="tag">Windows / Mac / Linux</span>
+            </div>
+            <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Get VS Code</a>
+          </div>
+
+          <!-- Git SCM -->
+          <div class="software-card reveal" data-category="programming" data-searchable="Git SCM version control system repositories github collaboration git command bash terminal">
+            <div class="software-icon icon-code">🌿</div>
+            <h3 class="software-title">Git SCM System</h3>
+            <p class="software-desc">Distributed version control system for project repositories and Git terminal command integration.</p>
+            <div class="software-tags">
+              <span class="tag tag-free">100% Free</span>
+              <span class="tag">Windows / Mac / Linux</span>
+            </div>
+            <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Download Git</a>
+          </div>
+
+          <!-- GitHub Desktop -->
+          <div class="software-card reveal" data-category="programming" data-searchable="GitHub Desktop GUI client git repositories pull commit push version control">
+            <div class="software-icon icon-code">🐙</div>
+            <h3 class="software-title">GitHub Desktop</h3>
+            <p class="software-desc">Simple graphic interface to manage Git repositories and commit, push, or pull code.</p>
+            <div class="software-tags">
+              <span class="tag tag-free">100% Free</span>
+              <span class="tag">Windows / Mac</span>
+            </div>
+            <a href="https://desktop.github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Get Desktop Client</a>
+          </div>
+
+          <!-- Python -->
+          <div class="software-card reveal" data-category="programming" data-searchable="Python 3 scripting compiler data analysis machine learning AI library">
+            <div class="software-icon icon-code">🐍</div>
+            <h3 class="software-title">Python 3.x</h3>
+            <p class="software-desc">Programming language for general purpose scripting, ML, and data science.</p>
+            <div class="software-tags">
+              <span class="tag tag-free">100% Free</span>
+              <span class="tag">Windows / Mac / Linux</span>
+            </div>
+            <a href="https://www.python.org/downloads/" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Download Python</a>
+          </div>
+
+          <!-- Anaconda -->
+          <div class="software-card reveal" data-category="programming" data-searchable="Anaconda Python distribution conda packages environment libraries datascience">
+            <div class="software-icon icon-code">📦</div>
+            <h3 class="software-title">Anaconda Distribution</h3>
+            <p class="software-desc">Comprehensive data science package manager containing Python, R, and conda libraries.</p>
+            <div class="software-tags">
+              <span class="tag tag-free">Free Individual Edition</span>
+              <span class="tag">Windows / Mac / Linux</span>
+            </div>
+            <a href="https://www.anaconda.com/download" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Get Anaconda</a>
+          </div>
+
+          <!-- JupyterLab -->
+          <div class="software-card reveal" data-category="programming" data-searchable="JupyterLab notebooks python interactive cells datasets graphs plot editor">
+            <div class="software-icon icon-code">🪐</div>
+            <h3 class="software-title">JupyterLab</h3>
+            <p class="software-desc">Next-generation web-based interface for interactive Python notebook pages and cells.</p>
+            <div class="software-tags">
+              <span class="tag tag-free">Free / Open Source</span>
+              <span class="tag">Windows / Mac / Linux</span>
+            </div>
+            <a href="https://jupyter.org/" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Open Jupyter</a>
+          </div>
+
+          <!-- Docker -->
+          <div class="software-card reveal" data-category="programming" data-searchable="Docker Desktop containers software packages microservices images virtualized runtime">
+            <div class="software-icon icon-code">🐳</div>
+            <h3 class="software-title">Docker Desktop</h3>
+            <p class="software-desc">Containerization platform packaging applications and all dependencies in lightweight boxes.</p>
+            <div class="software-tags">
+              <span class="tag tag-free">Free Tier</span>
+              <span class="tag">Windows / Mac / Linux</span>
+            </div>
+            <a href="https://www.docker.com/products/docker-desktop/" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm">Get Docker</a>
+          </div>
+        </div>
+
+        <!-- Category 7: Other Engineering Branches -->
+        <h2 class="software-section-title reveal" data-category="other">🔧 Mechanical, Civil & EEE software</h2>
+        <div class="cards-grid" data-category="other">
+          <!-- SolidWorks -->
+          <div class="software-card reveal" data-category="other" data-searchable="SolidWorks mechanical CAD drafting 3D modelling design stress analysis Dassault">
+            <div class="software-icon icon-cad">🧊</div>
+            <h3 class="software-title">Dassault SolidWorks</h3>
+            <p class="software-desc">Mechanical 3D CAD design modeling, draft sketches, and mechanical stress analysis.</p>
+            <div class="software-tags">
+              <span class="tag tag-student">Student License</span>
+              <span class="tag">Windows Only</span>
+            </div>
+          </div>
+
+          <!-- Fusion 360 -->
+          <div class="software-card reveal" data-category="other" data-searchable="Fusion 360 Autodesk CAD CAM CAE 3D modeling cloud design mechanical CNC lathe">
+            <div class="software-icon icon-cad">🌀</div>
+            <h3 class="software-title">Autodesk Fusion 360</h3>
+            <p class="software-desc">Cloud-based 3D CAD/CAM/CAE tool for mechanical modeling and product prototyping.</p>
+            <div class="software-tags">
+              <span class="tag tag-student">Free student access</span>
+              <span class="tag">Windows / Mac</span>
+            </div>
+          </div>
+
+          <!-- CATIA -->
+          <div class="software-card reveal" data-category="other" data-searchable="CATIA Dassault 3D engineering product design aerospace automotive mechanical">
+            <div class="software-icon icon-cad">✈️</div>
+            <h3 class="software-title">Dassault CATIA</h3>
+            <p class="software-desc">Premium 3D engineering suite widely used in automotive and aerospace design.</p>
+            <div class="software-tags">
+              <span class="tag tag-student">Institutional Licence</span>
+              <span class="tag">Windows / Linux</span>
+            </div>
+          </div>
+
+          <!-- ANSYS Mechanical -->
+          <div class="software-card reveal" data-category="other" data-searchable="ANSYS Mechanical structural FEA finite element analysis physics stress thermal aerospace fluids">
+            <div class="software-icon icon-cad">🔥</div>
+            <h3 class="software-title">ANSYS Mechanical</h3>
+            <p class="software-desc">Finite element analysis (FEA) platform for structural, stress, and thermal modeling.</p>
+            <div class="software-tags">
+              <span class="tag tag-student">Free Student Edition</span>
+              <span class="tag">Windows Only</span>
+            </div>
+          </div>
+
+          <!-- AutoCAD Civil 3D -->
+          <div class="software-card reveal" data-category="other" data-searchable="AutoCAD Civil 3D Autodesk design survey documentation building structures infrastructure mapping drafting">
+            <div class="software-icon icon-cad">🏗️</div>
+            <h3 class="software-title">AutoCAD Civil 3D</h3>
+            <p class="software-desc">Civil engineering drafting software mapping survey plans and infrastructure design.</p>
+            <div class="software-tags">
+              <span class="tag tag-student">Free student access</span>
+              <span class="tag">Windows Only</span>
+            </div>
+          </div>
+
+          <!-- ETABS -->
+          <div class="software-card reveal" data-category="other" data-searchable="ETABS CSI structure analysis design buildings skyscrapers concretes steel columns">
+            <div class="software-icon icon-cad">🏢</div>
+            <h3 class="software-title">CSI ETABS</h3>
+            <p class="software-desc">Structural analysis and design of multistory building frame systems (columns, slabs).</p>
+            <div class="software-tags">
+              <span class="tag tag-student">Institutional License</span>
+              <span class="tag">Windows Only</span>
+            </div>
+          </div>
+
+          <!-- STAAD.Pro -->
+          <div class="software-card reveal" data-category="other" data-searchable="STAAD.Pro Bentley 3D structural analysis design steel frames concrete loads foundations">
+            <div class="software-icon icon-cad">🌉</div>
+            <h3 class="software-title">Bentley STAAD.Pro</h3>
+            <p class="software-desc">3D structural analysis and steel/concrete frame design system checking structural loads.</p>
+            <div class="software-tags">
+              <span class="tag tag-student">Paid / Student Trial</span>
+              <span class="tag">Windows Only</span>
+            </div>
+          </div>
+
+          <!-- ETAP -->
+          <div class="software-card reveal" data-category="other" data-searchable="ETAP EEE electrical transient analyzer program power system grids flow protection">
+            <div class="software-icon icon-cad">⚡</div>
+            <h3 class="software-title">ETAP Power Suite</h3>
+            <p class="software-desc">Electrical Transient Analyzer Program for power systems load flow analysis and grid protection.</p>
+            <div class="software-tags">
+              <span class="tag tag-student">Institutional License</span>
+              <span class="tag">Windows Only</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+                        <div class="footer-logo">
+          <img src="images/horizontal-logo-transparent.png" alt="VITS iResource Hub">
+        </div>
+        <p>Your one-stop resource portal for VITS ECE students. Access academic materials, software, GATE prep, and placement resources — all in one place.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="software.html">Software</a></li>
+          <li><a href="gate.html">GATE Prep</a></li>
+          <li><a href="placements.html">Placements</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="useful-links.html">JNTUH Portal</a></li>
+          <li><a href="useful-links.html#scholarships">Scholarships</a></li>
+          <li><a href="useful-links.html#internships">Internships</a></li>
+          <li><a href="https://drive.google.com/drive/folders/1bInXkRc9mQFdbVbUMNxG1VVnrpKEyoPN?usp=drive_link" target="_blank" rel="noopener noreferrer">Google Drive</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://github.com/Manideepvelchuri" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="mailto:vignanecefourier2529@gmail.com">Email Coordinator</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 VITS iResource Hub. Made with ❤️ for engineering students.</span>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- Scripts -->
+  <script src="js/main.js?v=2.0"></script>
+</body>
+</html>
