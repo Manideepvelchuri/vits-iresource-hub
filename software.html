@@ -78,15 +78,27 @@
     </div>
   </nav>
 
-  <!-- Page Header -->
-  <header class="page-header">
-    <div class="container">
-      <div class="breadcrumb">
+    <!-- Page Header -->
+  <header class="page-header hero" style="min-height: auto; padding-top: calc(var(--nav-height) + var(--space-10)); padding-bottom: var(--space-10);">
+    <div class="hero-bg">
+      <div class="hero-orb"></div>
+      <div class="hero-orb"></div>
+    </div>
+    <div class="hero-grid"></div>
+    <div class="container hero-content">
+      <div class="breadcrumb" style="justify-content: center; margin-bottom: var(--space-4);">
         <a href="index.html">Home</a> <span>/</span> <span>Software</span>
       </div>
-      <div class="page-header-icon">💻</div>
-      <h1>ECE Software & Simulation Hub</h1>
-      <p>Download official CAD, VLSI, DSP, microcontroller IDEs, and open-source alternatives used in engineering labs.</p>
+      <div class="hero-badge" style="margin-bottom: var(--space-4);">
+        <span class="badge-dot"></span>
+        <span>💻 37+ Core Software Tools & CAD Suites</span>
+      </div>
+      <h1 class="hero-title" style="font-size: clamp(var(--text-3xl), 4vw, var(--text-5xl)); margin-bottom: var(--space-4);">
+        Software & <span class="gradient-text">Simulation Hub</span>
+      </h1>
+      <p class="hero-subtitle" style="font-size: var(--text-md); max-width: 650px; margin: 0 auto;">
+        Official download links, student license guides, and open-source alternatives for MATLAB, Vivado, Keil, LTspice, Proteus, and programming IDEs.
+      </p>
     </div>
   </header>
 
