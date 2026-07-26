@@ -1209,6 +1209,12 @@ img {
   padding: var(--space-12) var(--space-8);
   text-align: center;
   margin-bottom: var(--space-10);
+  z-index: 1;
+}
+
+.drive-section > * {
+  position: relative;
+  z-index: 3;
 }
 
 .drive-section::before {
@@ -1216,6 +1222,8 @@ img {
   position: absolute;
   inset: 0;
   background: radial-gradient(ellipse at center, rgba(66, 133, 244, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .drive-section .drive-icon {
@@ -1660,6 +1668,11 @@ img {
   transform: translateY(-4px);
 }
 
+.drive-card > * {
+  position: relative;
+  z-index: 3;
+}
+
 .drive-card::before {
   content: '';
   position: absolute;
@@ -1669,6 +1682,8 @@ img {
   height: 200%;
   background: radial-gradient(circle, rgba(66, 133, 244, 0.03) 0%, transparent 50%);
   animation: rotate-bg 15s linear infinite;
+  pointer-events: none;
+  z-index: 1;
 }
 
 @keyframes rotate-bg {
