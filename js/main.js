@@ -40,9 +40,10 @@ function updateThemeIcon(btn, theme) {
   btn.setAttribute('aria-label', `Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`);
 }
 
-/* ---- Navbar Scroll Effect ---- */
+/* ---- Navbar Scroll Effect & Interactive Topline ---- */
 function initNavbar() {
   const navbar = document.querySelector('.navbar');
+  const topline = document.querySelector('.topline');
   if (!navbar) return;
 
   const updateNavbar = () => {
@@ -50,6 +51,14 @@ function initNavbar() {
       navbar.classList.add('scrolled');
     } else {
       navbar.classList.remove('scrolled');
+    }
+
+    if (topline) {
+      const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (scrollHeight > 0) {
+        const progress = Math.min(1, Math.max(0.08, window.scrollY / scrollHeight));
+        topline.style.transform = `scaleX(${progress})`;
+      }
     }
   };
 
