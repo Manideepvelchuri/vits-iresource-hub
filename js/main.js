@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSearch();
   initFilterTabs();
   initBranchTabs();
+  initRoadmapTabs();
   initSoftwareDetails();
 });
 
@@ -257,6 +258,30 @@ function escapeHtml(str) {
   const div = document.createElement('div');
   div.textContent = str;
   return div.innerHTML;
+}
+
+/* ---- Roadmap Domain Tabs ---- */
+function initRoadmapTabs() {
+  const tabs = document.querySelectorAll('.roadmap-tab-btn');
+  const domains = document.querySelectorAll('[data-roadmap-domain]');
+  if (!tabs.length || !domains.length) return;
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const target = tab.getAttribute('data-roadmap-target');
+
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      domains.forEach(domain => {
+        if (target === 'all' || domain.getAttribute('data-roadmap-domain') === target) {
+          domain.style.display = 'block';
+        } else {
+          domain.style.display = 'none';
+        }
+      });
+    });
+  });
 }
 
 /* ---- Custom Notification Modal ---- */

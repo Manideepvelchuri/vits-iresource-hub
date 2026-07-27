@@ -307,63 +307,158 @@
   </section>
 
   <!-- Recommended Skill Roadmap Section (New!) -->
-  <section class="section">
+  <!-- Interactive ECE Domain Skill-Tree Roadmaps Section -->
+  <section class="section" id="roadmaps">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-label">Roadmap</span>
-        <h2 class="section-title">Interactive Skill Roadmap</h2>
-        <p class="section-desc">Click any card to open the official skill path guides, learning roadmaps, or compiler tutorials.</p>
+        <span class="section-label">ECE Skill Trees</span>
+        <h2 class="section-title">Domain Skill-Tree Roadmaps</h2>
+        <p class="section-desc">Referenced from <strong>ECE Lab (ecelab.me)</strong> & industry standards. Select a specialization domain to view the ordered learning path from fundamentals to buildable projects.</p>
       </div>
 
-      <div class="cards-grid" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: var(--space-6);">
-        <!-- Step 1 -->
-        <a href="https://www.w3schools.com/c/index.php" target="_blank" rel="noopener noreferrer" class="card reveal" style="border-left: 4px solid var(--primary-light); text-decoration: none; display: block; height: auto;">
-          <div style="font-size: var(--text-2xl); font-weight: 800; color: var(--primary-light); margin-bottom: var(--space-3);">01</div>
-          <h3 class="card-title" style="margin-top: 0;">C / C++ Programming →</h3>
-          <p class="card-desc">Start with C fundamentals — pointers, structures, file handling. Build a strong foundation before moving to data structures.</p>
-        </a>
-        <!-- Step 2 -->
-        <a href="https://www.geeksforgeeks.org/python-programming-language-tutorial/" target="_blank" rel="noopener noreferrer" class="card reveal" style="border-left: 4px solid var(--accent-light); text-decoration: none; display: block; height: auto;">
-          <div style="font-size: var(--text-2xl); font-weight: 800; color: var(--accent-light); margin-bottom: var(--space-3);">02</div>
-          <h3 class="card-title" style="margin-top: 0;">Python & Automation →</h3>
-          <p class="card-desc">Learn Python for scripting, data analysis, and lab automation. Essential for MATLAB alternatives and machine learning basics.</p>
-        </a>
-        <!-- Step 3 -->
-        <a href="https://nptel.ac.in/courses" target="_blank" rel="noopener noreferrer" class="card reveal" style="border-left: 4px solid var(--secondary-light); text-decoration: none; display: block; height: auto;">
-          <div style="font-size: var(--text-2xl); font-weight: 800; color: var(--secondary-light); margin-bottom: var(--space-3);">03</div>
-          <h3 class="card-title" style="margin-top: 0;">NPTEL Courses →</h3>
-          <p class="card-desc">Enroll in NPTEL courses for extra credits and deep subject understanding. Certificates accepted by JNTUH for elective credits.</p>
-        </a>
-        <!-- Step 4 -->
-        <a href="software.html" class="card reveal" style="border-left: 4px solid var(--primary-light); text-decoration: none; display: block; height: auto;">
-          <div style="font-size: var(--text-2xl); font-weight: 800; color: var(--primary-light); margin-bottom: var(--space-3);">04</div>
-          <h3 class="card-title" style="margin-top: 0;">Branch Simulators & CAD →</h3>
-          <p class="card-desc">Install and learn domain-specific tools — Vivado, Keil, LTspice for ECE; SolidWorks for Mech; AutoCAD for Civil.</p>
-        </a>
-        <!-- Step 5 -->
-        <a href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer" class="card reveal" style="border-left: 4px solid var(--accent-light); text-decoration: none; display: block; height: auto;">
-          <div style="font-size: var(--text-2xl); font-weight: 800; color: var(--accent-light); margin-bottom: var(--space-3);">05</div>
-          <h3 class="card-title" style="margin-top: 0;">Research & Publications →</h3>
-          <p class="card-desc">Use Google Scholar, IEEE Xplore, and ResearchGate to read papers. Start contributing to journals from 3rd year onwards.</p>
-        </a>
-        <!-- Step 6 -->
-        <a href="gate.html" class="card reveal" style="border-left: 4px solid var(--secondary-light); text-decoration: none; display: block; height: auto;">
-          <div style="font-size: var(--text-2xl); font-weight: 800; color: var(--secondary-light); margin-bottom: var(--space-3);">06</div>
-          <h3 class="card-title" style="margin-top: 0;">GATE Preparation →</h3>
-          <p class="card-desc">Access curated GATE resources — PYQs, mock tests, subject-wise lectures, and recommended books for each topic.</p>
-        </a>
-        <!-- Step 7 -->
-        <a href="https://aws.amazon.com/education/awseducate/" target="_blank" rel="noopener noreferrer" class="card reveal" style="border-left: 4px solid var(--primary-light); text-decoration: none; display: block; height: auto;">
-          <div style="font-size: var(--text-2xl); font-weight: 800; color: var(--primary-light); margin-bottom: var(--space-3);">07</div>
-          <h3 class="card-title" style="margin-top: 0;">Cloud & DevOps →</h3>
-          <p class="card-desc">Get started with AWS Educate, Azure for Students, or Google Cloud. Learn to deploy apps and manage cloud infrastructure.</p>
-        </a>
-        <!-- Step 8 -->
-        <a href="placements.html" class="card reveal" style="border-left: 4px solid var(--accent-light); text-decoration: none; display: block; height: auto;">
-          <div style="font-size: var(--text-2xl); font-weight: 800; color: var(--accent-light); margin-bottom: var(--space-3);">08</div>
-          <h3 class="card-title" style="margin-top: 0;">Placements & Interviews →</h3>
-          <p class="card-desc">Practice on LeetCode, HackerRank, and PrepInsta. Prepare aptitude, coding rounds, and HR interviews for campus placements.</p>
-        </a>
+      <!-- Domain Selection Tabs -->
+      <div class="branch-tabs-container reveal" style="margin-bottom: var(--space-8); justify-content: center; gap: 8px;">
+        <button class="branch-tab-btn roadmap-tab-btn active" data-roadmap-target="all">🌟 All Domains</button>
+        <button class="branch-tab-btn roadmap-tab-btn" data-roadmap-target="embedded">🔌 Embedded Systems</button>
+        <button class="branch-tab-btn roadmap-tab-btn" data-roadmap-target="vlsi">📟 VLSI & Chip Design</button>
+        <button class="branch-tab-btn roadmap-tab-btn" data-roadmap-target="robotics">🤖 Robotics & ROS 2</button>
+        <button class="branch-tab-btn roadmap-tab-btn" data-roadmap-target="iot">📶 IoT & Hardware PCB</button>
+      </div>
+
+      <!-- Roadmap Containers -->
+      <!-- 1. Embedded Systems Domain -->
+      <div data-roadmap-domain="embedded" class="reveal" style="margin-bottom: var(--space-10);">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-4); border-bottom: 1.5px solid rgba(124, 58, 237, 0.3); padding-bottom: 10px; flex-wrap: wrap; gap: 8px;">
+          <h3 style="font-size: 1.3rem; font-weight: 800; color: var(--text-primary); margin: 0;">🔌 Embedded Systems & Firmware Skill Path</h3>
+          <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; padding: 4px 12px; border-radius: 999px; background: rgba(124, 58, 237, 0.15); color: #a855f7;">5 PHASES · CORE ECE HARDWARE</span>
+        </div>
+        <div class="cards-grid" style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: var(--space-4);">
+          <div class="card" style="border-left: 4px solid #7c3aed; height: auto;">
+            <div style="font-size: 0.85rem; font-weight: 800; color: #7c3aed; margin-bottom: 4px;">PHASE 01</div>
+            <h4 style="margin: 0 0 6px; font-size: 1rem;">C / C++ Foundations</h4>
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin: 0; line-height: 1.4;">Pointers, memory management, bitwise operations (&, |, ^, ~), structs, and header files.</p>
+          </div>
+          <div class="card" style="border-left: 4px solid #3b82f6; height: auto;">
+            <div style="font-size: 0.85rem; font-weight: 800; color: #3b82f6; margin-bottom: 4px;">PHASE 02</div>
+            <h4 style="margin: 0 0 6px; font-size: 1rem;">Microcontroller Architecture</h4>
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin: 0; line-height: 1.4;">ARM Cortex-M, ESP32, RP2040. Timers, GPIOs, Interrupts (NVIC), and PWM generation.</p>
+          </div>
+          <div class="card" style="border-left: 4px solid #06b6d4; height: auto;">
+            <div style="font-size: 0.85rem; font-weight: 800; color: #06b6d4; margin-bottom: 4px;">PHASE 03</div>
+            <h4 style="margin: 0 0 6px; font-size: 1rem;">Register-Level Bare-Metal</h4>
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin: 0; line-height: 1.4;">No HAL / CubeIDE clicking — write directly to `GPIOA-&gt;ODR` using `arm-none-eabi-gcc` and Makefiles.</p>
+          </div>
+          <div class="card" style="border-left: 4px solid #10b981; height: auto;">
+            <div style="font-size: 0.85rem; font-weight: 800; color: #10b981; margin-bottom: 4px;">PHASE 04</div>
+            <h4 style="margin: 0 0 6px; font-size: 1rem;">Communication Protocols</h4>
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin: 0; line-height: 1.4;">Master UART, SPI, I2C, CAN Bus (automotive/EV), and USB CDC/HID device descriptors.</p>
+          </div>
+          <div class="card" style="border-left: 4px solid #ec4899; height: auto;">
+            <div style="font-size: 0.85rem; font-weight: 800; color: #ec4899; margin-bottom: 4px;">PHASE 05</div>
+            <h4 style="margin: 0 0 6px; font-size: 1rem;">FreeRTOS & Embedded Linux</h4>
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin: 0; line-height: 1.4;">Task queues, mutexes, semaphores, Yocto Project, and building Linux kernel device drivers.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. VLSI Domain -->
+      <div data-roadmap-domain="vlsi" class="reveal" style="margin-bottom: var(--space-10);">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-4); border-bottom: 1.5px solid rgba(6, 182, 212, 0.3); padding-bottom: 10px; flex-wrap: wrap; gap: 8px;">
+          <h3 style="font-size: 1.3rem; font-weight: 800; color: var(--text-primary); margin: 0;">📟 VLSI & Microchip Design Skill Path</h3>
+          <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; padding: 4px 12px; border-radius: 999px; background: rgba(6, 182, 212, 0.15); color: #06b6d4;">5 PHASES · SEMICONDUCTOR & ASIC</span>
+        </div>
+        <div class="cards-grid" style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: var(--space-4);">
+          <div class="card" style="border-left: 4px solid #06b6d4; height: auto;">
+            <div style="font-size: 0.85rem; font-weight: 800; color: #06b6d4; margin-bottom: 4px;">PHASE 01</div>
+            <h4 style="margin: 0 0 6px; font-size: 1rem;">Digital Logic & FSMs</h4>
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin: 0; line-height: 1.4;">Boolean algebra, combinational adders/muxes, flip-flops, Mealy vs Moore state machines.</p>
+          </div>
+          <div class="card" style="border-left: 4px solid #3b82f6; height: auto;">
+            <div style="font-size: 0.85rem; font-weight: 800; color: #3b82f6; margin-bottom: 4px;">PHASE 02</div>
+            <h4 style="margin: 0 0 6px; font-size: 1rem;">Verilog & SystemVerilog</h4>
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin: 0; line-height: 1.4;">RTL coding guidelines, blocking vs non-blocking assignments, parameterized testbenches.</p>
+          </div>
+          <div class="card" style="border-left: 4px solid #7c3aed; height: auto;">
+            <div style="font-size: 0.85rem; font-weight: 800; color: #7c3aed; margin-bottom: 4px;">PHASE 03</div>
+            <h4 style="margin: 0 0 6px; font-size: 1rem;">Verilator & cocotb Verification</h4>
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin: 0; line-height: 1.4;">Constrained-random testing in Python with cocotb and high-speed C++ simulation via Verilator.</p>
+          </div>
+          <div class="card" style="border-left: 4px solid #10b981; height: auto;">
+            <div style="font-size: 0.85rem; font-weight: 800; color: #10b981; margin-bottom: 4px;">PHASE 04</div>
+            <h4 style="margin: 0 0 6px; font-size: 1rem;">5-Stage RISC-V CPU Core</h4>
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin: 0; line-height: 1.4;">Build a pipelined RV32I CPU core with hazard detection, forwarding unit, and Spike co-simulation.</p>
+          </div>
+          <div class="card" style="border-left: 4px solid #ec4899; height: auto;">
+            <div style="font-size: 0.85rem; font-weight: 800; color: #ec4899; margin-bottom: 4px;">PHASE 05</div>
+            <h4 style="margin: 0 0 6px; font-size: 1rem;">Synthesis & OpenLane ASIC</h4>
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin: 0; line-height: 1.4;">FPGA synthesis in AMD Vivado / Yosys, STA timing analysis, and OpenLane RTL-to-GDSII flow.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Robotics Domain -->
+      <div data-roadmap-domain="robotics" class="reveal" style="margin-bottom: var(--space-10);">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-4); border-bottom: 1.5px solid rgba(16, 185, 129, 0.3); padding-bottom: 10px; flex-wrap: wrap; gap: 8px;">
+          <h3 style="font-size: 1.3rem; font-weight: 800; color: var(--text-primary); margin: 0;">🤖 Robotics, Autonomous Vehicles & ROS 2 Skill Path</h3>
+          <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; padding: 4px 12px; border-radius: 999px; background: rgba(16, 185, 129, 0.15); color: #10b981;">5 PHASES · AUTOMATION & AI</span>
+        </div>
+        <div class="cards-grid" style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: var(--space-4);">
+          <div class="card" style="border-left: 4px solid #10b981; height: auto;">
+            <div style="font-size: 0.85rem; font-weight: 800; color: #10b981; margin-bottom: 4px;">PHASE 01</div>
+            <h4 style="margin: 0 0 6px; font-size: 1rem;">Motor Drivers & Kinematics</h4>
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin: 0; line-height: 1.4;">H-bridge motor drivers (L298N, Cytron), quadrature encoders, PID control, and differential kinematics.</p>
+          </div>
+          <div class="card" style="border-left: 4px solid #3b82f6; height: auto;">
+            <div style="font-size: 0.85rem; font-weight: 800; color: #3b82f6; margin-bottom: 4px;">PHASE 02</div>
+            <h4 style="margin: 0 0 6px; font-size: 1rem;">Microcontroller Robot Build</h4>
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin: 0; line-height: 1.4;">Build an ESP32 Bluetooth robot or Pi Zero 2W differential drive teleoperation platform.</p>
+          </div>
+          <div class="card" style="border-left: 4px solid #7c3aed; height: auto;">
+            <div style="font-size: 0.85rem; font-weight: 800; color: #7c3aed; margin-bottom: 4px;">PHASE 03</div>
+            <h4 style="margin: 0 0 6px; font-size: 1rem;">ROS 2 & Gazebo Simulation</h4>
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin: 0; line-height: 1.4;">ROS 2 nodes, topics, services, publisher/subscriber patterns, and URDF robot simulation in Gazebo.</p>
+          </div>
+          <div class="card" style="border-left: 4px solid #06b6d4; height: auto;">
+            <div style="font-size: 0.85rem; font-weight: 800; color: #06b6d4; margin-bottom: 4px;">PHASE 04</div>
+            <h4 style="margin: 0 0 6px; font-size: 1rem;">SLAM & Nav2 Navigation</h4>
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin: 0; line-height: 1.4;">2D RPLidar SLAM mapping (`slam_toolbox`), AMCL localization, costmaps, and Nav2 path planning.</p>
+          </div>
+          <div class="card" style="border-left: 4px solid #ec4899; height: auto;">
+            <div style="font-size: 0.85rem; font-weight: 800; color: #ec4899; margin-bottom: 4px;">PHASE 05</div>
+            <h4 style="margin: 0 0 6px; font-size: 1rem;">Edge Computer Vision</h4>
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin: 0; line-height: 1.4;">OpenCV image processing, line tracking, object detection with YOLOv5n on ESP32-CAM or Jetson.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. IoT & Hardware Domain -->
+      <div data-roadmap-domain="iot" class="reveal" style="margin-bottom: var(--space-6);">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-4); border-bottom: 1.5px solid rgba(236, 72, 153, 0.3); padding-bottom: 10px; flex-wrap: wrap; gap: 8px;">
+          <h3 style="font-size: 1.3rem; font-weight: 800; color: var(--text-primary); margin: 0;">📶 IoT, PCB Layout & Hardware Skill Path</h3>
+          <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; padding: 4px 12px; border-radius: 999px; background: rgba(236, 72, 153, 0.15); color: #ec4899;">4 PHASES · HARDWARE & ELECTRONICS</span>
+        </div>
+        <div class="cards-grid" style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: var(--space-4);">
+          <div class="card" style="border-left: 4px solid #ec4899; height: auto;">
+            <div style="font-size: 0.85rem; font-weight: 800; color: #ec4899; margin-bottom: 4px;">PHASE 01</div>
+            <h4 style="margin: 0 0 6px; font-size: 1rem;">Analog & Circuit Simulation</h4>
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin: 0; line-height: 1.4;">Op-amps, active filters, transistor biasing, voltage regulators, and SPICE simulation in LTspice.</p>
+          </div>
+          <div class="card" style="border-left: 4px solid #7c3aed; height: auto;">
+            <div style="font-size: 0.85rem; font-weight: 800; color: #7c3aed; margin-bottom: 4px;">PHASE 02</div>
+            <h4 style="margin: 0 0 6px; font-size: 1rem;">KiCad Schematic & PCB Layout</h4>
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin: 0; line-height: 1.4;">Design custom PCBs in KiCad, trace routing, ground planes, DRC checks, and Gerber file generation.</p>
+          </div>
+          <div class="card" style="border-left: 4px solid #3b82f6; height: auto;">
+            <div style="font-size: 0.85rem; font-weight: 800; color: #3b82f6; margin-bottom: 4px;">PHASE 03</div>
+            <h4 style="margin: 0 0 6px; font-size: 1rem;">Wireless Protocols & Dashboards</h4>
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin: 0; line-height: 1.4;">Bluetooth LE, Wi-Fi 6, MQTT protocol, Node-RED, and cloud IoT dashboards (ThingsBoard / AWS IoT).</p>
+          </div>
+          <div class="card" style="border-left: 4px solid #10b981; height: auto;">
+            <div style="font-size: 0.85rem; font-weight: 800; color: #10b981; margin-bottom: 4px;">PHASE 04</div>
+            <h4 style="margin: 0 0 6px; font-size: 1rem;">Automotive & EV Electronics</h4>
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin: 0; line-height: 1.4;">CAN bus sniffing, OBD-II vehicle diagnostics, and Field-Oriented Control (FOC) for BLDC electric vehicle motors.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
