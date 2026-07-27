@@ -296,19 +296,88 @@
         </a>
 
         <!-- ECE Lab Featured Card -->
-        <a href="https://www.ecelab.me/" target="_blank" rel="noopener noreferrer" class="card reveal reveal-delay-1" style="text-decoration: none; padding: var(--space-6); text-align: center; display: block; height: auto; background: linear-gradient(135deg, rgba(124, 58, 237, 0.15), rgba(34, 211, 238, 0.1)); border: 1.5px solid rgba(124, 58, 237, 0.4); grid-column: span 2;">
+        <a href="https://www.ecelab.me/" target="_blank" rel="noopener noreferrer" class="card reveal reveal-delay-1" style="text-decoration: none; padding: var(--space-6); text-align: center; display: block; height: auto; background: linear-gradient(135deg, rgba(124, 58, 237, 0.15), rgba(34, 211, 238, 0.1)); border: 1.5px solid rgba(124, 58, 237, 0.4);">
           <div style="font-size: var(--text-3xl); margin-bottom: 10px;">⚡</div>
           <div style="font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; padding: 2px 8px; border-radius: 999px; background: linear-gradient(90deg, #7c3aed, #2563eb); color: #ffffff; display: inline-block; margin-bottom: 4px;">FEATURED ECE HUB</div>
           <h3 class="card-title" style="font-size: var(--text-lg); margin-bottom: 4px; color: var(--text-primary);">ECE Lab</h3>
           <p style="font-size: var(--text-xs); color: var(--text-secondary); margin: 0; line-height: 1.4;">Roadmaps, 150+ hardware project ideas & parts lists for ECE students</p>
         </a>
+
+        <!-- Virtual Labs (Govt of India / IITs) Featured Card -->
+        <a href="https://www.vlab.co.in/broad-area-electronics-and-communications" target="_blank" rel="noopener noreferrer" class="card reveal reveal-delay-2" style="text-decoration: none; padding: var(--space-6); text-align: center; display: block; height: auto; background: linear-gradient(135deg, rgba(6, 182, 212, 0.15), rgba(37, 99, 235, 0.1)); border: 1.5px solid rgba(6, 182, 212, 0.4);">
+          <div style="font-size: var(--text-3xl); margin-bottom: 10px;">🔬</div>
+          <div style="font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; padding: 2px 8px; border-radius: 999px; background: linear-gradient(90deg, #06b6d4, #2563eb); color: #ffffff; display: inline-block; margin-bottom: 4px;">GOVT OF INDIA & IITs</div>
+          <h3 class="card-title" style="font-size: var(--text-lg); margin-bottom: 4px; color: var(--text-primary);">Virtual Labs (VLab)</h3>
+          <p style="font-size: var(--text-xs); color: var(--text-secondary); margin: 0; line-height: 1.4;">Online virtual ECE experiments developed by IIT Bombay & IIIT Hyderabad</p>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- Recommended Skill Roadmap Section (New!) -->
-  <!-- Interactive ECE Domain Skill-Tree Roadmaps Section -->
-  <section class="section" id="roadmaps">
+  <!-- Section 1: Clickable Learning Path Steps (Restored & Improved!) -->
+  <section class="section" id="learning-path">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Learning Steps</span>
+        <h2 class="section-title">Interactive Step-by-Step Learning Resources</h2>
+        <p class="section-desc">Click any card below to open the official learning path tutorial, compiler site, or certification portal.</p>
+      </div>
+
+      <div class="cards-grid" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: var(--space-6);">
+        <!-- Step 1 -->
+        <a href="https://www.w3schools.com/c/index.php" target="_blank" rel="noopener noreferrer" class="card reveal" style="border-left: 4px solid var(--primary-light); text-decoration: none; display: block; height: auto;">
+          <div style="font-size: var(--text-2xl); font-weight: 800; color: var(--primary-light); margin-bottom: var(--space-3);">01</div>
+          <h3 class="card-title" style="margin-top: 0;">C / C++ Programming →</h3>
+          <p class="card-desc">Start with C fundamentals — pointers, memory structs, bitwise operations, and file handling for microcontrollers.</p>
+        </a>
+        <!-- Step 2 -->
+        <a href="https://www.geeksforgeeks.org/python-programming-language-tutorial/" target="_blank" rel="noopener noreferrer" class="card reveal" style="border-left: 4px solid var(--accent-light); text-decoration: none; display: block; height: auto;">
+          <div style="font-size: var(--text-2xl); font-weight: 800; color: var(--accent-light); margin-bottom: var(--space-3);">02</div>
+          <h3 class="card-title" style="margin-top: 0;">Python & Automation →</h3>
+          <p class="card-desc">Learn Python for data analysis, hardware scripting, and lab automation. Essential for cocotb and NumPy DSP tools.</p>
+        </a>
+        <!-- Step 3 -->
+        <a href="https://nptel.ac.in/courses" target="_blank" rel="noopener noreferrer" class="card reveal" style="border-left: 4px solid var(--secondary-light); text-decoration: none; display: block; height: auto;">
+          <div style="font-size: var(--text-2xl); font-weight: 800; color: var(--secondary-light); margin-bottom: var(--space-3);">03</div>
+          <h3 class="card-title" style="margin-top: 0;">NPTEL IIT Courses →</h3>
+          <p class="card-desc">Enroll in NPTEL courses for extra JNTUH elective credits, deep domain mastery, and official IIT certification.</p>
+        </a>
+        <!-- Step 4 -->
+        <a href="software.html" class="card reveal" style="border-left: 4px solid var(--primary-light); text-decoration: none; display: block; height: auto;">
+          <div style="font-size: var(--text-2xl); font-weight: 800; color: var(--primary-light); margin-bottom: var(--space-3);">04</div>
+          <h3 class="card-title" style="margin-top: 0;">Simulators & CAD Tools →</h3>
+          <p class="card-desc">Install 37+ branch tools — AMD Vivado, Keil MDK, LTspice, Proteus, KiCad PCB, and Virtual Labs (VLab) simulators.</p>
+        </a>
+        <!-- Step 5 -->
+        <a href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer" class="card reveal" style="border-left: 4px solid var(--accent-light); text-decoration: none; display: block; height: auto;">
+          <div style="font-size: var(--text-2xl); font-weight: 800; color: var(--accent-light); margin-bottom: var(--space-3);">05</div>
+          <h3 class="card-title" style="margin-top: 0;">Research & Publications →</h3>
+          <p class="card-desc">Use Google Scholar, IEEE Xplore, and ResearchGate to read engineering research papers and publish domain work.</p>
+        </a>
+        <!-- Step 6 -->
+        <a href="gate.html" class="card reveal" style="border-left: 4px solid var(--secondary-light); text-decoration: none; display: block; height: auto;">
+          <div style="font-size: var(--text-2xl); font-weight: 800; color: var(--secondary-light); margin-bottom: var(--space-3);">06</div>
+          <h3 class="card-title" style="margin-top: 0;">GATE ECE Prep →</h3>
+          <p class="card-desc">Access GATE Overflow PYQs, mock tests, subject-wise video lectures, and recommended reference books for each topic.</p>
+        </a>
+        <!-- Step 7 -->
+        <a href="https://aws.amazon.com/education/awseducate/" target="_blank" rel="noopener noreferrer" class="card reveal" style="border-left: 4px solid var(--primary-light); text-decoration: none; display: block; height: auto;">
+          <div style="font-size: var(--text-2xl); font-weight: 800; color: var(--primary-light); margin-bottom: var(--space-3);">07</div>
+          <h3 class="card-title" style="margin-top: 0;">Cloud & IoT Platforms →</h3>
+          <p class="card-desc">Get started with AWS Educate, Azure for Students, and Google Cloud. Connect ESP32 sensors to cloud MQTT brokers.</p>
+        </a>
+        <!-- Step 8 -->
+        <a href="placements.html" class="card reveal" style="border-left: 4px solid var(--accent-light); text-decoration: none; display: block; height: auto;">
+          <div style="font-size: var(--text-2xl); font-weight: 800; color: var(--accent-light); margin-bottom: var(--space-3);">08</div>
+          <h3 class="card-title" style="margin-top: 0;">Placements & Interviews →</h3>
+          <p class="card-desc">Practice LeetCode DSA, GeeksforGeeks core questions, aptitude tests, and AI resume builders for campus hiring drives.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Interactive ECE Domain Skill-Tree Roadmaps -->
+  <section class="section section-alt" id="roadmaps">
     <div class="container">
       <div class="section-header reveal">
         <span class="section-label">ECE Skill Trees</span>
