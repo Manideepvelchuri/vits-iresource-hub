@@ -1,10 +1,10 @@
 # ECE Hub JNTUH - Robots.txt
-# https://ecehub.tech
+# https://manideepvelchuri.github.io/vits-iresource-hub/
 
 User-agent: *
 Allow: /
 
-Sitemap: https://ecehub.tech/sitemap.xml
+Sitemap: https://manideepvelchuri.github.io/vits-iresource-hub/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1
